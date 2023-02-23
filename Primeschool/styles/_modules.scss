@@ -1,0 +1,56 @@
+// GENERAL
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    // outline: 1px solid green;
+}
+
+//Variable
+$colors:(
+    color01: #000000,
+    color02: #FFFFFF,
+    color03: #40FFC7,
+    color04: #18A2FB
+);
+
+// Function
+@function getColor($key){
+    @return map-get($colors, $key);
+}
+
+// Mixin
+@mixin portrait{
+    @media (max-width: 768.2px){
+        @content;
+    }
+}
+@mixin landscape{
+    @media (max-width: 992.2px){
+        @content;
+    }
+}
+
+//Keyframes
+@keyframes slide {
+    from {
+        right: -50%;
+        opacity: 0;
+    }
+    to {
+        right: 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}

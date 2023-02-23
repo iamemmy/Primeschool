@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+@keyframes slide {
+  from {
+    right: -50%;
+    opacity: 0;
+  }
+  to {
+    right: 0%;
+    opacity: 1;
+  }
+}
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+#main-container {
+  height: 100vh;
+  background: linear-gradient(210deg, #40FFC7, #18A2FB);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 4rem;
+  padding-right: 10rem;
+  padding-top: 30vh;
+}
+#main-container h1 {
+  font-size: 90px;
+  color: #FFFFFF;
+}/*# sourceMappingURL=styles.css.map */
