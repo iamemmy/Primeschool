@@ -29,21 +29,20 @@
   background-color: #0C0C0F;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  padding-left: 4rem;
   height: -moz-fit-content;
   height: fit-content;
 }
-#testimonials h1 {
-  font-size: 90px;
-  color: #0538FF;
-  margin-bottom: 2rem;
+#testimonials .header {
+  font-size: 65px;
+  background-image: linear-gradient(123deg, #18A2FB 10%, #0538FF 39%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
-#testimonials .arrow-wrapper {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  padding: 0.4rem 3rem;
-  margin-bottom: 4rem;
+#testimonials img[alt=Testimonial_image] {
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #testimonials .arrow-wrapper div .arrows {
   font-size: 20px;
@@ -56,6 +55,7 @@
      -moz-user-select: none;
           user-select: none;
   cursor: pointer;
+  text-decoration: none;
 }
 #testimonials .arrow-wrapper div .arrows:active {
   box-shadow: 0 0 10px 0 0 #808080;
@@ -65,33 +65,7 @@
 }
 #testimonials .arrow-wrapper div .arrows:hover {
   background-color: #808080;
-  border: none;
   color: #fff;
-}
-#testimonials .testimonial-wrapper div {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  padding-inline: 3rem;
-  gap: 2rem;
-}
-#testimonials .testimonial-wrapper div div img {
-  border-radius: 1rem;
-}
-#testimonials .testimonial-wrapper div div {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-#testimonials .testimonial-wrapper div div h2 {
-  font-size: 40px;
-  color: #FFFFFF;
-  line-height: 3rem;
-  margin-bottom: 2rem;
-}
-#testimonials .testimonial-wrapper div div p {
-  font-size: 20px;
-  color: #FFFFFF;
-  line-height: 3rem;
 }
 
 #main-container {
