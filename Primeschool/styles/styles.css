@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@300&family=Raleway&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -135,6 +136,194 @@
   background-color: gainsboro;
   border: none;
   color: black;
+}
+
+* {
+  background: none;
+}
+
+body {
+  font-size: 3rem;
+}
+body .footer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 415.9px;
+  width: 1440px;
+  background: #fff;
+}
+body .footer .vector {
+  position: absolute;
+  width: 665px;
+  height: 415.89px;
+  left: -128px;
+  border: none;
+  background: none;
+}
+body .footer .footer-h {
+  position: absolute;
+  top: 12%;
+  left: 4%;
+  background: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+body .footer .footer-sb {
+  position: absolute;
+  top: 25%;
+  left: 4%;
+  background: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}
+body .footer .footer-txt {
+  position: absolute;
+  height: 30px;
+  width: 350px;
+  top: 42%;
+  line-height: 27px;
+  left: 4%;
+  background: none;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 300;
+}
+body .footer #icons {
+  position: absolute;
+  top: 85%;
+  left: 3%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+body .footer #icons li {
+  font-size: 24px;
+  color: black;
+  list-style: none;
+  margin-left: 15px;
+}
+body .footer .box {
+  position: absolute;
+  padding: 8vw;
+  top: -1%;
+  left: 32%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  font-size: 19px;
+  line-height: 35px;
+  border: none;
+}
+body .footer .box h3 {
+  font-size: 22px;
+  margin-top: 5px;
+  margin-left: 32px;
+  color: black;
+}
+body .footer .box a {
+  text-decoration: none;
+  color: black;
+}
+body .footer .links-c1 li {
+  list-style: none;
+  position: relative;
+  left: 12px;
+  line-height: 40px;
+  width: 160px;
+}
+body .footer .fh1 {
+  position: relative;
+  left: -25px;
+  top: 5px;
+}
+body .footer .links-c2 li {
+  list-style: none;
+  position: relative;
+  left: 40px;
+  line-height: 40px;
+  width: 250px;
+}
+body .footer .fh2 {
+  position: relative;
+  left: 10px;
+  top: 5px;
+}
+body .footer .links-c3 li {
+  list-style: none;
+  position: relative;
+  left: 65px;
+  line-height: 40px;
+  width: 150px;
+}
+body .footer .fh3 {
+  position: relative;
+  left: 32px;
+  top: 5px;
+}
+body .footer .links-c4 li {
+  list-style: none;
+  position: relative;
+  left: 95px;
+  line-height: 40px;
+  width: 150px;
+}
+body .footer .fh4 {
+  position: relative;
+  left: 65px;
+  top: 4.8px;
+}
+body .footer input {
+  width: 160px;
+  height: 14px;
+  padding: 16px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 300;
+  border: 2px solid rgba(230, 243, 230, 0.568627451);
+  background: rgba(230, 243, 230, 0.568627451);
+  color: rgba(85, 85, 86, 0.8196078431);
+  box-shadow: 6px 6px 12px rgba(41, 41, 41, 0.09);
+}
+body .footer button {
+  position: relative;
+  left: 15px;
+  margin-top: 25px;
+  width: 127px;
+  height: 38px;
+  border-radius: 10px;
+  border: 0.5px solid #4B89C2;
+  background: linear-gradient(231.14deg, #17A1FA 9.86%, #40FFC7 82.93%);
+  color: #fff;
+}
+body .footer .btm-bx {
+  position: absolute;
+  width: 1440px;
+  height: 37px;
+  top: 415px;
+  left: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0px;
+  background: #17A1FA;
+  border: none;
+}
+body .footer .c-txt {
+  position: relative;
+  left: 4.5%;
+  width: 345px;
+  height: 21px;
+  background: none;
+  color: #fff;
+  font-size: 14px;
 }
 
 .studyWithUs {
