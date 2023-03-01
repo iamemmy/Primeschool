@@ -1,0 +1,142 @@
+$pTag:#F0F0F5;
+$heading: linear-gradient(285deg, rgb(5, 56, 255) 9.18%, #40FFC7 90.82%);
+$detailsBtn:linear-gradient(115.35deg, #17A1FA 15.13%, #40FFC7 78.95%);
+
+
+    @mixin ReusableStyle{
+        position: relative;
+        font-style: normal;
+    }
+
+
+
+.academySection {
+        
+    h2 {
+        @include ReusableStyle();
+        width: 1148px;
+        height: 133px; 
+        font-family: 'Raleway';
+        font-weight: 600;
+        font-size: 110px;
+        line-height: 110.5%;
+        background:$heading;
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+       p {
+           @include ReusableStyle();        
+            letter-spacing: 0.1px;
+            color: $pTag;      
+            font-family: Lato;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+    }
+
+    .buttonContainer > button {
+      color: rgba(247, 247, 248, 0.25);
+      border: none;
+      background: transparent;
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      letter-spacing: 0.1px;
+      cursor: pointer;
+    }
+   
+    .buttonContainer > button::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background:linear-gradient(rgba(23,161,250,1), rgba(64,255,199,1));
+            transition: width 0.3s;
+    }
+    
+    .buttonContainer > button:hover::after {
+                        width: 100%;
+                    }
+
+
+    .tabContainer .tabPanel {
+        display: none;
+       }
+
+
+     .card {
+        height: 100%;
+        background-color: transparent;
+        color: white;
+        border-radius: 20px;
+        border: 1px solid rgba(23,161,250,1);
+        width: 100%;
+        padding: 30px;
+
+    }
+
+
+    .grid_card{
+        display: grid;
+        gap: 2rem;
+        grid-auto-flow: column;
+        grid-auto-columns: 43%;
+        overflow-x: auto;
+    } 
+
+
+    .grid_card button {
+        background:transparent;
+        border: 1px solid white;
+        border-radius: 50px;
+        position:relative;
+        width: 100px;
+        height: 50px; 
+        color: white;
+    }
+    
+    .grid_card button:hover {
+            position:relative;
+            width: 100px;
+            height: 50px;          
+            background: $detailsBtn;
+            border:none;
+            border-radius: 50px;   
+         }
+}
+
+
+
+    .grid_card::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .prev-nxt {    
+        background-size: 15%;
+        background-repeat: no-repeat;
+        background-position-x:right;
+        background-position-y:0;
+        z-index: -2;
+
+         .arrow {
+            font-size: 20px;
+            border: 2px solid white;
+            color: white;
+            border-radius: 50%;
+            padding: 20px 22px;
+            transition: background-color 1s ease;
+            user-select: none;
+            cursor: pointer;
+           
+            &:hover {
+              background-color:gainsboro;
+              border: none;
+              color:black;
+            }
+          }
+        }
+    
