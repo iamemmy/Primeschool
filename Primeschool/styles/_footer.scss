@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@300&family=Raleway&display=swap');
+
+@mixin flexContent($justify-content, $align-items, $flex-direction){
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+}
+
+$blueGreen: linear-gradient(231.14deg, #17A1FA 9.86%, #40FFC7 82.93%);
+$white: #fff;
+
+
+
+      
+.footer{
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 25.5%;
+  width: 100%;
+  background: #fff;
+
+
+.vector{
+  position: relative;
+  bottom: -126vh;
+  width: 665px;
+  height: 415.89px;
+  left: -128px;
+  border: none;
+  background: none;
+}
+
+.footer-h{
+  position: relative;
+  bottom: -105.5vh;
+  left: 3.7vh;
+  background: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.footer-sb{
+  position: relative;
+  bottom: -103.5vh;
+  left: 3.7vh;
+  background: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.footer-txt{
+  position: relative;
+  height: 30px;
+  width: 368px;
+  bottom: -103vh;
+  line-height: 27px;
+  left: 3.7vh;
+  background: none;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-size: 18.5px;
+  font-weight: 300;
+}
+
+#icons{
+  position: relative;
+  width: 16vw;
+  bottom: -109vh;
+  left: 3.2vh;
+  @include flexContent(space-around, center, row);
+}
+
+#icons li{
+  font-size: 24px;
+  color: black;
+  list-style: none;
+  margin-left: 0.5px;
+  cursor: pointer;
+}
+
+.box{
+  position: relative;
+  padding: 8vw;
+  bottom: -87vh;
+  left: 45vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  font-size: 18px;
+  line-height: 35px;
+  border: none;
+}
+
+h3{
+  font-size: 22px;
+  margin-top: 5px;
+  margin-left: 28px;
+  color: black;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.links-c1 li{
+  list-style: none;
+  position: relative;
+  left: 2.8vh;
+  line-height: 40px;
+  width: 160px;
+  cursor: pointer;
+  
+}
+
+.fh1{
+  position: relative;
+  left: .8vh;
+  top: 5px;
+  cursor: pointer;
+}
+
+.links-c2 li{
+  list-style: none;
+  position: relative;
+  left: 3.7vh;
+  line-height: 40px;
+  width: 250px;
+  cursor: pointer;
+}
+
+.fh2{
+  position: relative;
+  left: 2.1vh;
+  top: 5px;
+  cursor: pointer;
+}
+
+.links-c3 li{
+  list-style: none;
+  position: relative;
+  left: 5vh;
+  line-height: 40px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.fh3{
+  position: relative;
+  left: 3vh;
+  top: 5px;
+  cursor: pointer;
+}
+
+.links-c4 li{
+  list-style: none;
+  position: relative;
+  left: 95px;
+  line-height: 40px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.fh4{
+  position: relative;
+  left: 65px;
+  top: 5px;
+  cursor: pointer;
+} 
+
+input{
+  width: 160px;
+  height: 5px;
+  padding: 16px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 300;
+  border: 2px solid #E6F3E691;
+  background: #E6F3E691;
+  color: #555556D1;
+  box-shadow: 6px 6px 12px rgb(41, 41, 41, 0.09);
+  cursor: text;
+}
+
+button{
+  position: relative;
+  left: 15px;
+  margin-top: 25px;
+  width: 127px;
+  height: 35px;
+  border-radius: 10px;
+  border: 0.5px solid #4B89C2;
+  background: $blueGreen;
+  color: $white;
+  cursor: pointer;
+}
+
+.btm-bx{
+  position: relative;
+  width: 1440px;
+  height: 37px;
+  bottom: -111vh;
+  left: 0px;
+  @include flexContent(center, center, row);
+  padding: 8px 0px;
+  background: #17A1FA;
+  border: none;
+}
+
+.c-txt{
+  position: relative;
+  left: 4.5%;
+  width: 345px;
+  height: 21px;
+  background: none;
+  color: $white;
+  font-size: 14px;
+}
+ 
+}
