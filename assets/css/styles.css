@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+@keyframes slide {
+  from {
+    right: -50%;
+    opacity: 0;
+  }
+  to {
+    right: 0%;
+    opacity: 1;
+  }
+}
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+#testimonials {
+  background-color: #0C0C0F;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#testimonials .header {
+  font-size: 65px;
+  background-image: linear-gradient(123deg, #18A2FB 10%, #0538FF 39%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+#testimonials img[alt=Testimonial_image] {
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#testimonials .arrow-wrapper div .arrows {
+  font-size: 20px;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  border-radius: 50%;
+  padding: 20px 22px;
+  transition: background-color 1s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+#testimonials .arrow-wrapper div .arrows:active {
+  box-shadow: 0 0 10px 0 0 #808080;
+}
+#testimonials .arrow-wrapper div .arrows:first-child {
+  margin-right: 20px;
+}
+#testimonials .arrow-wrapper div .arrows:hover {
+  background-color: #808080;
+  color: #fff;
+}
+
+#main-container {
+  height: 100vh;
+  background: linear-gradient(210deg, #40FFC7, #18A2FB);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 4rem;
+  padding-right: 10rem;
+  padding-top: 30vh;
+}
+#main-container h1 {
+  font-size: 90px;
+  color: #FFFFFF;
+}/*# sourceMappingURL=styles.css.map */
