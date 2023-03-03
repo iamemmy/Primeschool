@@ -12,26 +12,7 @@
         sectionButtons[currentSection].classList.remove("active");
         sections[currentSection = i].classList.add("active");
         sectionButtons[currentSection].classList.add("active");
-        
-        if (i === 0) {
-            if (previousButton.className.split(" ").indexOf("disable") < 0) {
-                previousButton.classList.add("disable");
-            }
-        } else {
-            if (previousButton.className.split(" ").indexOf("disable") >= 0) {
-                previousButton.classList.remove("disable");
-            }
-        }
-        if (i === sectionButtons.length - 1) {
-            if (nextButton.className.split(" ").indexOf("disable") < 0) {
-                nextButton.classList.add("disable");
-            }
-        } else {
-            if (nextButton.className.split(" ").indexOf("disable") >= 0) {
-                nextButton.classList.remove("disable");
-            }
-        }
-    });
+     });
     }
 
         nextButton.addEventListener("click", function() {
