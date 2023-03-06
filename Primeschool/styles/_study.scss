@@ -1,0 +1,39 @@
+.studyWithUs {
+    background-color:getColor(color07);
+  }
+
+
+.studyBG {
+  background-color: getColor(color02);
+
+    h4 {
+        font-family: Raleway;
+        font-size: 70px;
+        font-weight: 600;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+   p   {
+        position: relative;
+        font-style: normal;          
+        letter-spacing: 0.1px;
+        color: getColor(color08);      
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    h2{
+        font-family: Raleway;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 53px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+}
+
+
