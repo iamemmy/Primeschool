@@ -1,17 +1,10 @@
-$studyColor:#17171F;
-$bgColor:#F0F0F0;
-$pTag: #5F5F5F;
-
-
-
-
 .studyWithUs {
-    background-color:$studyColor;
+    background-color:getColor(color07);
   }
 
 
 .studyBG {
-  background-color: $bgColor;
+  background-color: getColor(color02);
 
     h4 {
         font-family: Raleway;
@@ -25,7 +18,7 @@ $pTag: #5F5F5F;
         position: relative;
         font-style: normal;          
         letter-spacing: 0.1px;
-        color: $pTag;      
+        color: getColor(color08);      
         font-family: Lato;
         font-size: 20px;
         font-weight: 400;
