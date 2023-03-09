@@ -1,4 +1,4 @@
-//Newsflash script PLANNER --Owl Carousel Command
+//NEWSFLASH SCRIPT PLANNER --Owl Carousel Command
 $(document).ready(function() {
     var owl = $('.owl-carousel');
     owl.owlCarousel({
@@ -25,3 +25,26 @@ $(document).ready(function() {
         owl.trigger('prev.owl.carousel');
       });
   });
+
+
+
+
+// FOOTER PLANNER script 
+
+const form = document.querySelector("form");
+
+
+
+form.addEventListener("submit", e => {
+
+    if (!form.checkValidity()) {
+
+        e.preventDefault()
+
+    }
+
+    form.classList.add("was-validated")
+
+}
+
+)
