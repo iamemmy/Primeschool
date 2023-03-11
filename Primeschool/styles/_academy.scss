@@ -1,45 +1,56 @@
-$pTag:#F0F0F5;
-$heading: linear-gradient(285deg, rgb(5, 56, 255) 9.18%, #40FFC7 90.82%);
-$detailsBtn:linear-gradient(115.35deg, #17A1FA 15.13%, #40FFC7 78.95%);
+@mixin ReusableStyle{
+    position: relative;
+    font-style: normal;
+}
 
 
-    @mixin ReusableStyle{
-        position: relative;
-        font-style: normal;
-    }
-
-
-
-.academySection {
-        
+.academySection {       
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-inline: 4.2rem;
     h2 {
         @include ReusableStyle();
-        width: 1148px;
-        height: 133px; 
+         // width: 1148px;
+        width: max-content;
+        height: 130px; 
         font-family: 'Raleway';
         font-weight: 600;
-        font-size: 110px;
-        line-height: 110.5%;
-        background:$heading;
-       -webkit-background-clip: text;
-       -webkit-text-fill-color: transparent;
+        font-size: 90px;
+        line-height: 90.5%;
+        background:getColor(gradient01);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         background-clip: text;
     }
+
+    @media (max-width: 1200px) {
+      h2 {
+         width: min-content;
+         height: 230px; 
+       }
+     }  
+
+     @media (max-width: 470px) {
+      h2 {
+         width: min-content;
+         height: 230px; 
+         font-size: 70px;
+       }
+     } 
 
        p {
            @include ReusableStyle();        
             letter-spacing: 0.1px;
-            color: $pTag;      
+            color: getColor(color02);      
             font-family: Lato;
             font-size: 20px;
             font-weight: 400;
             line-height: 30px;
     }
 
-    .buttonContainer > button {
+    ul > li {
+      list-style: none;
       color: rgba(247, 247, 248, 0.25);
-      border: none;
-      background: transparent;
       font-family: 'Lato';
       font-style: normal;
       font-weight: 400;
@@ -47,8 +58,9 @@ $detailsBtn:linear-gradient(115.35deg, #17A1FA 15.13%, #40FFC7 78.95%);
       letter-spacing: 0.1px;
       cursor: pointer;
     }
+
    
-    .buttonContainer > button::after {
+    ul > li::after {
             content: '';
             display: block;
             width: 0;
@@ -57,24 +69,38 @@ $detailsBtn:linear-gradient(115.35deg, #17A1FA 15.13%, #40FFC7 78.95%);
             transition: width 0.3s;
     }
     
-    .buttonContainer > button:hover::after {
-                        width: 100%;
-                    }
+         ul > li:hover::after {
+                 width: 100%;
+            }
 
+          .section {
+            display: none;
+            }
+            
+            .section.active{
+              display: block;
+            }
+            
+            ul li.active::after{
+              width: 100%;
+            }
 
-    .tabContainer .tabPanel {
-        display: none;
-       }
+            ul li.active{
+              color: white;
+            }
 
 
      .card {
-        height: 100%;
         background-color: transparent;
         color: white;
         border-radius: 20px;
         border: 1px solid rgba(23,161,250,1);
         width: 100%;
         padding: 30px;
+
+        h3{
+          color: white;
+        }
 
     }
 
@@ -85,12 +111,21 @@ $detailsBtn:linear-gradient(115.35deg, #17A1FA 15.13%, #40FFC7 78.95%);
         grid-auto-flow: column;
         grid-auto-columns: 43%;
         overflow-x: auto;
+        height:40vh;
     } 
+
+    
+    @media (max-width: 780px) {
+      .grid_card {
+         height:fit-content;
+       }
+     }  
 
 
     .grid_card button {
+        margin-top: 3vh;
         background:transparent;
-        border: 1px solid white;
+        border: 1px solid rgba(23,161,250,1);
         border-radius: 50px;
         position:relative;
         width: 100px;
@@ -102,7 +137,7 @@ $detailsBtn:linear-gradient(115.35deg, #17A1FA 15.13%, #40FFC7 78.95%);
             position:relative;
             width: 100px;
             height: 50px;          
-            background: $detailsBtn;
+            background: getColor(gradient02);
             border:none;
             border-radius: 50px;   
          }
@@ -115,28 +150,30 @@ $detailsBtn:linear-gradient(115.35deg, #17A1FA 15.13%, #40FFC7 78.95%);
     }
 
 
-    .prev-nxt {    
-        background-size: 15%;
-        background-repeat: no-repeat;
-        background-position-x:right;
-        background-position-y:0;
-        z-index: -2;
-
-         .arrow {
-            font-size: 20px;
-            border: 2px solid white;
-            color: white;
-            border-radius: 50%;
-            padding: 20px 22px;
-            transition: background-color 1s ease;
-            user-select: none;
-            cursor: pointer;
-           
-            &:hover {
-              background-color:gainsboro;
-              border: none;
-              color:black;
-            }
-          }
-        }
-    
+        .prev-nxt { 
+           background-size: 18%;
+           background-repeat: no-repeat;
+           background-position-x:right;
+           background-position-y:0;
+           z-index: -2;
+          
+              .navigate {
+                font-size: 25px;
+                border: 2px solid white;
+                color: white;
+                border-radius: 50%;
+                padding: 18px 20px;
+                transition: background-color 1s ease;
+                cursor: pointer;
+                 
+                    &:first-child {
+                      margin-right: 20px;
+                    }
+                  
+                      &:hover {
+                        background-color: gainsboro;
+                        border: none;
+                        color: #fff;
+                      }
+                    }
+              }         

@@ -1,58 +1,50 @@
-
-// Academy Script SUNNY
-var buttons = document.querySelectorAll(".tabContainer .buttonContainer button");
-var tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
-
-function showCourses (panelIndex) {
-  buttons.forEach(function (node) {
-     node.style.color= "";
-       node.style.borderBottom = ""
+//NEWSFLASH SCRIPT PLANNER --Owl Carousel Command
+$(document).ready(function() {
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+      responsive:{
+          0:{
+              items:1,
+              loop:true,
+          },
+          600:{
+              items:1,
+              loop:true,
+          },
+          1000:{
+              items:1,
+              loop:true,
+          }
+      }
+    });
+    $('#next').click(function() {
+        owl.trigger('next.owl.carousel');
+      });
+    
+      $('#prev').click(function() {
+        owl.trigger('prev.owl.carousel');
+      });
   });
 
-  buttons[panelIndex].style.color='white'; 
-   buttons[panelIndex].style.borderBottom ='2px solid rgba(23,161,250,1)'; 
-    tabPanels.forEach(function (node) {
-      node.style.display= "none";
-  });
 
-  tabPanels[panelIndex].style.display="block";
-  
+
+
+// FOOTER PLANNER script 
+
+const form = document.querySelector("form");
+
+
+
+form.addEventListener("submit", e => {
+
+    if (!form.checkValidity()) {
+
+        e.preventDefault()
+
+    }
+
+    form.classList.add("was-validated")
+
 }
- showCourses(0)
 
- // END of  Academy Script 
-
-
-//Newsflash script PLANNER
-
-const buttons = document.querySelectorAll("[data-carousel-button]");
-
-buttons.forEach(button => {
-
-  button.addEventListener("click", ()=> { const offset = button.dataset.carousel-button === "next" ? 1 : -1
-
-    const slides = button.closest("[data-carousel]").querySelector("[data-slides]")
-
-    
-
-    const activeSlide = slides.querySelector("[data-active]")
-
-    let newIndex = [...slides.children].indexOf(activeSlide) + offset
-
-    
-
-    if (newIndex < 0) newIndex = slides.children.length - 1;
-
-    if (newIndex >= slides.children.length) newIndex = 0;
-
-      
-
-    slides.children[newIndex].dataset.active = true;
-
-    delete activeSlide.dataset.active;
-
-  })  
-
-})
-
-// End of Newsflash script
+)

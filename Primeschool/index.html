@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRIME SCHOOL PROJECT</title>
+    <script src="https://kit.fontawesome.com/76edf1e5d3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/styles.css"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="main.js"></script>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
 
      <!-- HERO AREA  --> 
@@ -101,37 +105,38 @@
          <!-- EMD OF STUDY WITH US -->
          
 
-
-
-
-     <!--.....................Academic Programs ......Sunny............... -->
-     <div class="container academySection mt-5">   
-          <div class="row">
-            <div class="col-md-8">
-                   <h2 class="text-left">Academic Programs</h2>   
-            </div>
-        </div>
-
-            <div class="row">
-                <div class="col-md-10">
-                    <p>Earth is the third planet from the Sun and the only astronomical object known to harbor life. 
-                        According to radiometric dating estimation and other evidence, Earth formed over 4.5 billion 
-                        years ago. Earth is the third planet from the Sun and the only astronomical object known to 
-                        harbor life. According to radiometric dating estimation and other evidence, Earth formed over 
-                        4.5 billion years ago.</p>
+     <!-- ACADEMY SECTION -->
+    <div class="container-fluid academySection mt-5 bg-dark">   
+        <div class="row">
+            <div class="col">
+              <div class="container">
+                <div class="row">
+                    <div class="col-md p-3">
+                        <h2>Academic Programs</h2>   
+                    </div>
                 </div>
+
+        <div class="row">
+            <div class="col-md-8 bg">
+                <p>Earth is the third planet from the Sun and the only astronomical object known to harbor life. 
+                    According to radiometric dating estimation and other evidence, Earth formed over 4.5 billion 
+                    years ago. Earth is the third planet from the Sun and the only astronomical object known to 
+                    harbor life. According to radiometric dating estimation and other evidence, Earth formed over 
+                    4.5 billion years ago.</p>
+
             </div>
 
                
                                  
          <div class="row">
             <div class="col-md mt-5">
-                <div class="tabContainer">
-                    <div class="buttonContainer d-flex flex-wrap justify-content-evenly align-items-center">
-                      <button onclick="showCourses(0)">Bachelor</button>
-                      <button onclick="showCourses(1)">Master</button>
-                      <button onclick="showCourses(2)">phD</button>
-                    </div>
+                <div class="tabContainer p-5">
+                    <ul class="nav d-flex flex-wrap justify-content-evenly align-items-center">
+                    <li class="active">Bachelor</li>
+                    <li>Master</li>
+                    <li>phD</li>
+                    </ul>
+                </div>
                 
                   
             <div class="tabPanel mt-5 mb-5">
@@ -184,9 +189,11 @@
                 </div>
              </div>
           </div>
-        </div>
+       </div>
     </div>
-</div> 
+   </div>
+ </div>
+
     <!-- END OF ACADEMY SECTION -->
 
 
@@ -195,6 +202,7 @@
     
     
     
+
   <!-- NEWSFLASH-PLANNER -->
     <section id="newsflash">
         <div class="container-fluid">
@@ -356,12 +364,205 @@
             </div>
 
         </div>
+=======
+    <!-- NEWSFLASH SECTION PLANNER-->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+         <h1 id="header">Newsflash</h1>
+      </div>
+    </div>
     
+      
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+         <p id="pr">Press release </p>
+      </div> 
+    </div>  
+      
+      
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <p class="pr-date">17th February, 2023</p>
+      </div>
+    </div>  
+      
+      
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <p class="pr-head">Prime's Aeronautical Engineering <br> got accredited.</p>
+      </div>
+    </div>
+    
+      
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <p class="pr-text">Earth is the third planet from the sun and the only astronomical object known to harbor life. According to radiometric dating estimation and other evidence, Earth formed over 4.5 billion years ago.</p>
+      </div>
+    </div>
+     
+      
+    <div class="row">
+    <div class="mt-5 mt-md-0" id="newsflash">
+      <div class="container">
+          <div class="arrow-wrapper d-flex justify-content-center p-3 mb-5 mb-md-4 justify-content-md-end" id="arrows">
+          <div>
+                  <a class="fa- arrows" id="prev"><img src="media/arrowl.png"  id="prev"></a>
+                  <a class="fa- arrows" id="next"><img src="media/arrowr.png"  id="next"></a>
+          </div>
+      </div>
+          <div class="owl-carousel" id="carousel">
+              <div class="card border-0 bg-transparent">
+                  <div class="row">
+                      <div class="col-md-12" id="cslides">
+                          <img id="nfimg" src="media/nfimg.png" alt="news1" class="w-100 h-100">
+                      </div>
+    
+      </div>
+  </div>  
+
+    <!-- END OF-NEWSFLASH SECTION-->
+
+      
+    
+    
+   <!-- FOOTER SECTION PLANNER--> 
+
+  <footer class=" mt-auto footer-area footer-fluid">
+    <div class="footer-big">
+
+    
+      <div class="container-fluid" id="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-12" id="c0">
+            <div class="card" id="card">
+              <img src="media/fvector.png" class="card-img" id="imgv"/>
+              <div class="card-img-overlay" id="overlay">
+              <div class="card-body">
+                <h3 id="c0h">PRIME</h3>
+                <h3 id="c0sh">INTERNATIONAL <br><span>SCHOOL</span></h3>
+                <div class="text-c">
+                  <p id="overtext">
+                                  Amet minim mollit non deserunt ullamco est sit aliqua dolor <br>do amet sint. Velit officia consequat duis enim velit mollit.<br> Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+                </div>
+            <div id="slinks">
+              <a href="#"> <i class="fa fa-facebook"> </i> </a>
+              <a href="#"> <i class="fa fa-linkedin"> </i> </a>
+              <a href="#"> <i class="fa fa-twitter"> </i> </a>
+              <a href="#"> <i class="fa fa-instagram"> </i> </a> 
+            </div>
+              </div>
+              </div>
+            </div>
+      
+      </div>
+
 
     </footer>  <!-- END OF FOOTER-->
     
 
 
-    <script src="main.js"></script>
-</body>
-</html>
+      <div class="col-md-2 col-sm-5">
+          <div id="c1c">
+            <h4 id="c1h">Our Company</h4>
+            <ul class="list-unstyled" id="c1li">
+              <li id="#c1a">
+                <a href="#" class="text-decoration-none text-dark">Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark">News</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="col-lg-2 col-sm-5" id="c2">
+          <div id="c2c">
+            <h4 id="c2h">Faculty</h4>
+            <ul class="list-unstyled" id="c2li">
+              <li>
+                <a href="#" class="text-decoration-none text-dark">Faculty of Engineering</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark">Pure and Applied sciences</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark">Media</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-sm-5" id="c3">
+        <div id="c3c">
+          <h4 id="c3h">Admission</h4>
+          <ul class="list-unstyled" id="c3li">
+            <li>
+              <a href="#" class="text-decoration-none text-dark">Undergraduate</a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark">Postgraduate</a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark">PHD</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+
+        <div class="col-lg-2 col-sm-5" id="c4">
+          <div id="c4c">
+            <h4 id="c4h">Get latest updates</h4>
+            <form action="#" novalidate>
+              <div class="form-floating">
+                <input type="email" class="form-control" Placeholder="Email"id="inputE" required>
+                <div class="invalid-feedback">Invalid email</div>
+                <div class="valid-feedback">Correct email</div>
+              </div>
+              <button id="subB">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="mini-footer">
+      <div class="container-fluid">
+        <div class="row" id="btmr">
+          <div class="col-md-12 col-sm-12">
+            <div class="copyright-text">
+              <p id="ct"> Copyrights are reserved Prime International School
+              </p>
+            </div>
+
+
+            <div class="go_top">
+              <span class="icon-arrow-up"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer> 
+      <!-- END OF-FOOTER SECTION-->
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="main.js"></script>
+  </body>
+  </html>
