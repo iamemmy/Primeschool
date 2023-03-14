@@ -7,12 +7,15 @@ $lightblue: #17A1FA;
 
 body{
   width: 100%;
-
-
+}
+footer{
+    position: relative;
+    bottom: -15rem;
   #card{
     height: fit-content;
     width: 100%;
-    margin-left: -2.5em;
+    position: relative;
+    left: -3.5em;
     border: none;
   }
 
@@ -63,7 +66,7 @@ body{
 
   #slinks{
     background: none;
-    color: white;
+    color: $white;
     position: relative;
     left: -3.2em;
   }
@@ -71,7 +74,7 @@ body{
   #sl{
     text-decoration: none;
     background: none;
-    color: white;
+    color: $white;
     margin-left: 0.5em;
   }
 
@@ -119,15 +122,15 @@ body{
     margin-bottom: 1.5em;
     padding-bottom: 1em;
     border: 4px lightcyan;
-    background-color: #ecfad2ce;
+    background-color: #eaffc4ce;
     box-shadow: 30px 30px 80px rgba(240, 239, 220, 0.09);
   }
 
   #subB{
     margin-bottom: 3em;
     margin-left: 0.7em;
-    background: linear-gradient(231.14deg, #17A1FA 9.86%, #40FFC7 82.93%);
-    color: white;
+    background: $bluegreen;
+    color: $white;
     width: 12em;
     height: 2.8em;
     border-radius: 0.5em;
@@ -135,9 +138,11 @@ body{
   }
 
   #btmf{
-    color: white;
-    width: 100vw;
-    background-color: #17A1FA;
+    color: $white;
+    position: relative;
+    left: -2rem;
+    width: 104vw;
+    background-color: $lightblue;
     overflow-x: hidden;
   }
 
@@ -145,3 +150,8 @@ body{
     font-size: 0.85em;
   }
 }
+  @media(max-width:930px) {
+    #btmf{
+      width: 108vw;
+    }
+  }
