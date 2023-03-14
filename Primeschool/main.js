@@ -2,18 +2,21 @@
 $(document).ready(function() {
     var owl = $('.owl-carousel');
     owl.owlCarousel({
+        loop: false,
+        autoWidth: false,
+        responsiveClass: true,
       responsive:{
           0:{
+              loop: false,
               items:1,
-              loop:true,
           },
           600:{
+              loop: false,
               items:1,
-              loop:true,
           },
           1000:{
+              loop: false,
               items:1,
-              loop:true,
           }
       }
     });
