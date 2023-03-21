@@ -1,48 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@300&family=Raleway&display=swap');
 
-$black: black;
-$white: #fff;
-$bluegreen: linear-gradient(231.14deg, #17A1FA 9.86%, #40FFC7 82.93%);
-$lightblue: #17A1FA;
+$color1: black;
+$color2: #fff;
+$color3: #17A1FA;
+$color4: linear-gradient(231.14deg, #17A1FA 9.86%, #40FFC7 82.93%);
 
 #newsflash{
-  margin-bottom: -8.5em;
-  #header{
+  background-color: $color2;
+  
+  .header{
     position: relative;
     width: 655px;
     height: 133px;
-    left: 0.8em;
-    top: 1em;
+
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 95px;
     line-height: 110.5%;
-    background: $bluegreen;
+    background: $color4;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-emphasis-color: transparent;
   }
 
-  #pr-r2{
-    position: relative;
-    top: 8em;
-    left: 1.7em;
-  }
-
-  #prc{
-    position: relative;
-    left: 3em;
-  }
-
   #pr{
-    color: #17171F;
+    color: $color1;
     position: relative;
     width: auto;
     height: 37px;
     background: none;
-    color: $black;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: bolder;
@@ -56,115 +44,74 @@ $lightblue: #17A1FA;
     position: relative;
     height: 79px;
     width: auto;
+    left: 2em;
     background: none;
-    color: $black;
+    color: black;
     font-style: normal;
     font-weight: bolder;
     font-size: 1.6em;
     line-height: 40px;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.1px
   }
 
-  #pr-r3{
-    position: relative;
-    top: 9em;
-    left: 1.7em; 
-  }
-
-  #pr-date-c{
+  #pr-date{
     background: none;
     position: relative;
-    left: 1.85em;
-    color: $black;
+    color: $color1;
     font-family: "lato", sans-serif;
     font-size: 1.6em;
     height: 5px;
     letter-spacing: 1px;
-    font-weight: 600;
+    font-weight: 300;
   }
-  
+
   #pr-text{
     font-family: "Raleway" sans-serif;
     background: none;
     height: 30px;
     width: auto;
-    color: $black;
+    color: $color1;
     font-family: "lato", sans-serif;
     font-size: 1em;
-    font-weight: 550;
+    font-weight: 300;
+    letter-spacing: 1.5px;
     letter-spacing: 0.5px;
     position: relative;
-  }
-  
-  #pr-r4{
-    position: relative;
-    top: 6em;
+    left: 3.2em;
   }
 
-  #arrows{
-    position: relative;
-    top: 1em;
-    left: 68vw;
-    display: flex;
-    justify-content: flex-end;
+  .arrow-wrapper{
+    div{
+      position: relative;
+      top: -2em;
+        .arrowl{
+          margin-right: 2em;
+          cursor: pointer;
+          &:active{
+            background-color: $color2;
+          }
+          &:hover{
+            background-color: $color2;
+          }
+        }
+        .arrowr{
+          font-size: 20px;
+          cursor: pointer;
+          text-decoration: none;
+          transition: background-color 1s ease-out;
+          &:active{
+            background-color: $color2;
+          }
+          &:hover{
+            background-color: $color2;
+          }
+        }
+    }
+  }
+
+  .owl-carousel{
+    img[alt=news_image]{
+      border-radius: 1.4em;
+    }    
+  }
 }
-  #nextb{
-    font-size: 2em;
-    padding: 20px 22px;
-    transition: background-color 1s ease-out;
-    cursor: pointer;
-    text-decoration: none;
-    &:hover, &:focus{
-    background-color: $white;
-       }      
-      }
-
-  #prevb{
-    font-size: 5em;
-    margin-right: 0.1em;
-    font-size: 5em;
-    padding: 20px 22px;
-    transition: background-color 1s ease-out;
-    cursor: pointer;
-      &:hover, &:focus{
-          background-color: $white;
-      }
-  }
-
-  #carousel{
-    position: relative;
-    left: 5vh;
-    top: -2vh;
-    width: 87vw;
-  }
-
-  #cslides {
-    position: relative;
-    left: -3.5vh;      
-    width: 100%;
-    height: 90vh; 
-  }
-  
-  #nfimg{
-    position: relative;
-    top: 20vh;
-    left: 0em;
-    width: 100%;
-    border-radius: 28px;
-    height: 29vh;
-    object-fit: cover;
-    }
-  }
-
-  @media(max-width:930px) {
-    #pr-head{
-      margin-bottom: 1.75em;
-    }
-    #pr-date-c{
-      margin-bottom: 1.5em;
-    }#pr-text{
-      margin-bottom: 3em;
-    }#arrows{
-      margin-bottom: 1.5em;
-    }
-  }
