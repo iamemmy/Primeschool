@@ -1,0 +1,61 @@
+
+.empower{
+  
+    .dot{
+        background:linear-gradient(270.61deg, #17A1FA 15.58%, #40FFC7 91.75%); 
+        border-radius: 5px;
+        width: 5px;
+        height: 30px;
+        left: 30px;
+        top: 69px;
+        transform: rotate(180deg);
+      }
+
+    h1{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 65px;
+        line-height: 116.5%;
+      }
+      
+         p{
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: 0.1px;
+         }
+
+
+
+         .mrgin{
+          margin-left: 4rem;
+        }
+      
+        p{
+          .Principal{
+            background: linear-gradient(234.7deg, #17A1FA 38.96%, #40FFC7 80.62%);
+            font-family: 'Lato';
+            letter-spacing: 0em;
+            text-align: center;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;  
+          }
+        }
+
+
+        @media (max-width: 680px) {
+          h1{
+            font-size: 40px;
+          }
+
+          .mrgin{
+            margin: 0%;           
+            font-size: 16px;
+          }                    
+       }
+        
+        }
