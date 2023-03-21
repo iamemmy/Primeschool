@@ -94,3 +94,15 @@ $(document).ready(function() {
 //   })
   
   // End of Newsflash script
+
+
+
+    // ABOUT US  NAVIGATION SCRIPT
+    function opennav(){
+        document.getElementById("mynav").style.width="100%";   
+    }
+
+    function closenav(){
+        document.getElementById("mynav").style.width="0%";
+    }
+    // END OF ABOUT US NAVIGATION SCRIPT

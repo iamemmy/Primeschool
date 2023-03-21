@@ -1,0 +1,54 @@
+.building{
+   
+    .dot{
+        background:linear-gradient(270.61deg, #17A1FA 15.58%, #40FFC7 91.75%); 
+        border-radius: 5px;
+        width: 5px;
+        height: 30px;
+        left: 30px;
+        top: 69px;
+        transform: rotate(180deg);
+      }
+
+      h4{ 
+        padding: 2rem;     
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 63px;
+        line-height: 116.5%;
+      }
+
+      .founding-text{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+      }
+
+}
+
+.read{
+   .more {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 33px;   
+    text-decoration: underline #17A1FA;    
+    background: linear-gradient(243.92deg, #17A1FA -4.69%, #40FFC7 83.14%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     background-clip: text;
+     cursor: pointer;
+  }
+
+  }   
+  
+  @media (max-width:400px) {
+    h4.build{
+      font-size: 35px;
+    }
+   }
