@@ -2,6 +2,7 @@
 
 .contact {
   padding-bottom: 3em;
+  background-color: #17171F;
   height: 100em;
 }
 .contact #logo1 {
@@ -139,6 +140,7 @@
   background-color: #512FFA;
 }
 .contact .image-con {
+  background: #17171F;
   position: relative;
   top: 12.5em;
 }
