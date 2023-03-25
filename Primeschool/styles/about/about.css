@@ -258,79 +258,123 @@
 
 #staff-area {
   padding: 30px;
-  background-color: #000000;
   position: relative;
-  border-bottom: 1px solid #FFFFFF;
 }
-#staff-area .team-header {
+#staff-area .staff-area-sub .team-header {
   width: 5%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-#staff-area .team-header .dot {
+@media (max-width: 768.2px) {
+  #staff-area .staff-area-sub .team-header {
+    margin-bottom: 20px;
+  }
+}
+#staff-area .staff-area-sub .team-header .dot {
   background: linear-gradient(270.61deg, #17A1FA 15.58%, #40FFC7 91.75%);
   border-radius: 5px;
   width: 5px;
   height: 30px;
   transform: rotate(180deg);
 }
-#staff-area .team-header p {
+#staff-area .staff-area-sub .team-header p {
   font-size: 15px;
   line-height: 36px;
   color: #FFFFFF;
 }
-#staff-area .staff-header {
+#staff-area .staff-area-sub .staff-header {
   font-size: 40px;
   color: #FFFFFF;
   text-align: center;
   margin-bottom: 60px;
 }
-#staff-area .staff-showcase {
+@media (max-width: 768.2px) {
+  #staff-area .staff-area-sub .staff-header {
+    margin-bottom: 70px;
+  }
+}
+#staff-area .staff-area-sub .staff-showcase {
   position: absolute;
   right: 30px;
   top: 60px;
   font-size: 18px;
   color: #FFFFFF;
 }
-#staff-area .staff-view-all {
+@media (max-width: 768.2px) {
+  #staff-area .staff-area-sub .staff-showcase {
+    top: 194px;
+    font-size: 16px;
+  }
+}
+#staff-area .staff-area-sub .staff-view-all {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
-#staff-area .staff-view-all a {
+@media (max-width: 768.2px) {
+  #staff-area .staff-area-sub .staff-view-all {
+    justify-content: left;
+    margin-bottom: 50px;
+  }
+}
+#staff-area .staff-area-sub .staff-view-all a {
   color: #FFFFFF;
   text-align: center;
 }
-#staff-area .staff-card-wrap {
+#staff-area .staff-area-sub .staff-card-wrap {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
 }
-#staff-area .staff-card-wrap .staff-card .staff-card-img {
+@media (max-width: 768.2px) {
+  #staff-area .staff-area-sub .staff-card-wrap {
+    display: grid;
+    grid-column: 1fr/-1;
+    grid-auto-flow: column;
+    gap: 12px;
+    overflow-x: auto;
+  }
+}
+@media (max-width: 768.2px) {
+  #staff-area .staff-area-sub .staff-card-wrap .staff-card {
+    min-width: 13rem;
+  }
+}
+#staff-area .staff-area-sub .staff-card-wrap .staff-card .staff-card-img {
   width: 100%;
 }
-#staff-area .staff-card-wrap .staff-card .staff-card-img img {
+#staff-area .staff-area-sub .staff-card-wrap .staff-card .staff-card-img img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#staff-area .staff-card-wrap .staff-card .staff-card-text {
+#staff-area .staff-area-sub .staff-card-wrap .staff-card .staff-card-text {
   padding: 10px 3px;
 }
-#staff-area .staff-card-wrap .staff-card .staff-card-text h4 {
+#staff-area .staff-area-sub .staff-card-wrap .staff-card .staff-card-text h4 {
   color: #FFFFFF;
   font-size: 22px;
   margin-bottom: 10px;
 }
-#staff-area .staff-card-wrap .staff-card .staff-card-text p {
+@media (max-width: 768.2px) {
+  #staff-area .staff-area-sub .staff-card-wrap .staff-card .staff-card-text h4 {
+    font-size: 18px;
+  }
+}
+#staff-area .staff-area-sub .staff-card-wrap .staff-card .staff-card-text p {
   color: #FFFFFF;
   font-size: 13px;
 }
-#staff-area .card-view-all {
+@media (max-width: 768.2px) {
+  #staff-area .staff-area-sub .staff-card-wrap .staff-card .staff-card-text p {
+    font-size: 12px;
+  }
+}
+#staff-area .staff-area-sub .card-view-all {
   -webkit-text-decoration: underline #17A1FA;
           text-decoration: underline #17A1FA;
   background: linear-gradient(243.92deg, #17A1FA -4.69%, #40FFC7 83.14%);
@@ -342,53 +386,69 @@
 
 #testimonial-area {
   padding: 30px;
-  background-color: #000000;
   position: relative;
 }
-#testimonial-area .review-header {
+#testimonial-area .testimonial-area-sub .review-header {
   width: 5%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-#testimonial-area .review-header .dot {
+#testimonial-area .testimonial-area-sub .review-header .dot {
   background: linear-gradient(270.61deg, #17A1FA 15.58%, #40FFC7 91.75%);
   border-radius: 5px;
   width: 5px;
   height: 30px;
   transform: rotate(180deg);
 }
-#testimonial-area .review-header p {
+#testimonial-area .testimonial-area-sub .review-header p {
   font-size: 15px;
   line-height: 36px;
   color: #FFFFFF;
 }
-#testimonial-area .testimonial-header {
+#testimonial-area .testimonial-area-sub .testimonial-header {
   font-size: 40px;
   color: #FFFFFF;
   text-align: center;
   margin-bottom: 60px;
 }
-#testimonial-area .testimonial-showcase {
+@media (max-width: 768.2px) {
+  #testimonial-area .testimonial-area-sub .testimonial-header {
+    margin-top: 20px;
+  }
+}
+#testimonial-area .testimonial-area-sub .testimonial-showcase {
   position: absolute;
   right: 30px;
   top: 60px;
   font-size: 18px;
   color: #FFFFFF;
 }
-#testimonial-area .main-reviews-wrapper {
+@media (max-width: 768.2px) {
+  #testimonial-area .testimonial-area-sub .testimonial-showcase {
+    top: 190px;
+    font-size: 16px;
+  }
+}
+#testimonial-area .testimonial-area-sub .main-reviews-wrapper {
   padding: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-#testimonial-area .main-reviews-wrapper .review-wrapper {
+@media (max-width: 768.2px) {
+  #testimonial-area .testimonial-area-sub .main-reviews-wrapper {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
+#testimonial-area .testimonial-area-sub .main-reviews-wrapper .review-wrapper {
   display: grid;
   justify-content: center;
   align-items: center;
   gap: 20px;
   border-right: 1px solid #FFFFFF;
 }
-#testimonial-area .main-reviews-wrapper .review-wrapper .review {
+#testimonial-area .testimonial-area-sub .main-reviews-wrapper .review-wrapper .review {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -396,45 +456,60 @@
   align-items: center;
   padding-bottom: 10px;
 }
-#testimonial-area .main-reviews-wrapper .review-wrapper .review .review-img {
+#testimonial-area .testimonial-area-sub .main-reviews-wrapper .review-wrapper .review .review-img {
   width: 40px;
 }
-#testimonial-area .main-reviews-wrapper .review-wrapper .review .review-img img {
+#testimonial-area .testimonial-area-sub .main-reviews-wrapper .review-wrapper .review .review-img img {
   width: 100%;
   border-radius: 50%;
 }
-#testimonial-area .main-reviews-wrapper .review-wrapper .review .review-text h3 {
+#testimonial-area .testimonial-area-sub .main-reviews-wrapper .review-wrapper .review .review-text h3 {
   color: #FFFFFF;
   margin-bottom: 10px;
   font-size: 19px;
 }
-#testimonial-area .main-reviews-wrapper .review-wrapper .review .review-text p {
+#testimonial-area .testimonial-area-sub .main-reviews-wrapper .review-wrapper .review .review-text p {
   color: #FFFFFF;
   font-size: 15px;
 }
-#testimonial-area .main-reviews-wrapper .review-wrapper .rev-1 {
+#testimonial-area .testimonial-area-sub .main-reviews-wrapper .review-wrapper .rev-1 {
   border-bottom: 1px solid #FFFFFF;
 }
-#testimonial-area .main-reviews-wrapper .emp-students-wrap {
+#testimonial-area .testimonial-area-sub .main-reviews-wrapper .emp-students-wrap {
   display: grid;
   justify-content: center;
   align-items: center;
   padding-left: 40px;
 }
-#testimonial-area .main-reviews-wrapper .emp-students-wrap h2 {
+#testimonial-area .testimonial-area-sub .main-reviews-wrapper .emp-students-wrap h2 {
   color: #FFFFFF;
   font-size: 28px;
 }
-#testimonial-area .main-reviews-wrapper .emp-students-wrap div {
-  color: #FFFFFF;
+#testimonial-area .testimonial-area-sub .main-reviews-wrapper .emp-students-wrap div {
+  margin-bottom: 10px;
 }
-#testimonial-area .main-reviews-wrapper .emp-students-wrap .emp-p-1 {
+#testimonial-area .testimonial-area-sub .main-reviews-wrapper .emp-students-wrap div img {
+  width: 20px;
+}
+#testimonial-area .testimonial-area-sub .main-reviews-wrapper .emp-students-wrap .emp-p-1 {
   color: #FFFFFF;
   font-size: 16px;
 }
-#testimonial-area .main-reviews-wrapper .emp-students-wrap .emp-p-2 {
+#testimonial-area .testimonial-area-sub .main-reviews-wrapper .emp-students-wrap .emp-p-2 {
   color: #FFFFFF;
   font-size: 16px;
+}
+
+#social-media-wrapper {
+  display: none;
+}
+@media (max-width: 768.2px) {
+  #social-media-wrapper {
+    display: block;
+  }
+}
+#social-media-wrapper div .social-icon img {
+  width: 20px;
 }
 
 * {
