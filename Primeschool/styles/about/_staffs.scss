@@ -61,50 +61,7 @@
             }
         }
         // staffs card
-        .staff-card-wrap {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 20px;
-            @include portrait {
-                display: grid;
-                grid-column: 1fr / -1;
-                grid-auto-flow: column;
-                gap: 12px;
-                overflow-x: auto;
-            }
-            .staff-card {
-                @include portrait {
-                    min-width: 13rem;
-                }
-                .staff-card-img {
-                    width: 100%;
-                    img {
-                        width: 100%;
-                        object-fit: cover;
-                    }
-                }
-                .staff-card-text {
-                    padding: 10px 3px;
-                    h4 {
-                        color: getColor(color02);
-                        font-size: 22px;
-                        margin-bottom: 10px;
-                        @include portrait {
-                            font-size: 18px;
-                        }
-                    }
-                    p {
-                        color: getColor(color02);
-                        font-size: 13px;
-                        @include portrait {
-                            font-size: 12px;
-                        }
-                    }
-                }
-            }
-        }
+        
         .card-view-all {
             text-decoration: underline #17A1FA;    
             background: linear-gradient(243.92deg, #17A1FA -4.69%, #40FFC7 83.14%);
@@ -238,9 +195,6 @@
         display: block;
     }
     div {
-        .social-text {
-
-        }
         .social-icon {
             img {
                 width: 20px;
