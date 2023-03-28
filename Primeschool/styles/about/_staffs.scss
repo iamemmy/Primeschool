@@ -73,118 +73,196 @@
     }
 }
 
-#testimonial-area {
-    padding: 30px;
-    position: relative;
-    .testimonial-area-sub {
-        .review-header {
-            width: 5%;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            .dot {
-                background:linear-gradient(270.61deg, #17A1FA 15.58%, #40FFC7 91.75%); 
-                border-radius: 5px;
-                width: 5px;
-                height: 30px;
-                transform: rotate(180deg);
-            }
-            p {
-                font-size: 15px;
-                line-height: 36px;
-                color: getColor(color02);
-            }
-        }
-        .testimonial-header {
-            font-size: 40px;
-            color: getColor(color02);
-            text-align: center;
-            margin-bottom: 60px;
-            @include portrait {
-                margin-top: 20px;
-            }
-        }
-        .testimonial-showcase {
-            position: absolute;
-            right: 30px;
-            top: 60px;
-            font-size: 18px;
-            color: getColor(color02);
-            @include portrait {
-                top: 190px;
-                font-size: 16px;
-            }
-        }
+// #testimonial-area {
+//     padding: 30px;
+//     position: relative;
+//     .testimonial-area-sub {
+//         .review-header {
+//             width: 5%;
+//             display: grid;
+//             grid-template-columns: 1fr 1fr;
+//             gap: 20px;
+//             .dot {
+//                 background:linear-gradient(270.61deg, #17A1FA 15.58%, #40FFC7 91.75%); 
+//                 border-radius: 5px;
+//                 width: 5px;
+//                 height: 30px;
+//                 transform: rotate(180deg);
+//             }
+//             p {
+//                 font-size: 15px;
+//                 line-height: 36px;
+//                 color: getColor(color02);
+//             }
+//         }
+//         .testimonial-header {
+//             font-size: 40px;
+//             color: getColor(color02);
+//             text-align: center;
+//             margin-bottom: 60px;
+//             @include portrait {
+//                 margin-top: 20px;
+//             }
+//         }
+//         .testimonial-showcase {
+//             position: absolute;
+//             right: 30px;
+//             top: 60px;
+//             font-size: 18px;
+//             color: getColor(color02);
+//             @include portrait {
+//                 top: 190px;
+//                 font-size: 16px;
+//             }
+//         }
     
-        //reviews
-        .main-reviews-wrapper {
-            padding: 50px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            @include portrait {
-                grid-template-columns: 1fr;
-                padding: 20px;
+//         //reviews
+//         .main-reviews-wrapper {
+//             padding: 50px;
+//             display: grid;
+//             grid-template-columns: 1fr 1fr;
+//             @include portrait {
+//                 grid-template-columns: 1fr;
+//                 padding: 20px;
+//             }
+//             .review-wrapper {
+//                 display: grid;
+//                 justify-content: center;
+//                 align-items: center;
+//                 gap: 20px;
+//                 border-right: 1px solid getColor(color02);
+//                 .review {
+//                     width: 100%;
+//                     display: grid;
+//                     grid-template-columns: 1fr 3fr;
+//                     justify-content: center;
+//                     align-items: center;
+//                     padding-bottom: 10px;
+//                     .review-img {
+//                         width: 40px;
+//                         img {
+//                             width: 100%;
+//                             border-radius: 50%;
+//                         }
+//                     }
+//                     .review-text {
+//                         h3 {
+//                             color: getColor(color02);
+//                             margin-bottom: 10px;
+//                             font-size: 19px;
+//                         }
+//                         p {
+//                             color: getColor(color02);
+//                             font-size: 15px;
+//                         }
+//                     }
+//                 }
+//                 .rev-1 {
+//                     border-bottom: 1px solid getColor(color02);
+//                 }
+//             }
+//             .emp-students-wrap {
+//                 display: grid;
+//                 justify-content: center;
+//                 align-items: center;
+//                 padding-left: 40px;
+//                 h2 {
+//                     color: getColor(color02);
+//                     font-size: 28px;
+//                 }
+//                 div {
+//                     margin-bottom: 10px;
+//                     img {
+//                         width: 20px;
+//                     }
+//                 }
+//                 .emp-p-1 {
+//                     color: getColor(color02);
+//                     font-size: 16px;
+//                 }
+//                 .emp-p-2 {
+//                     color: getColor(color02);
+//                     font-size: 16px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+#testimonial-area{
+    .heading{
+        .dot{
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                top: -30%;
+                left: -25px;
+                width: 5px;
+                height: 40px;
+                border-radius: 100vmax;
+                background-image: linear-gradient(45deg, #27ff01, #a053df);
+                isolation: isolate;
+                z-index: 9;
+                -webkit-transition: all 3s;
+                transition: all 3s;
             }
-            .review-wrapper {
-                display: grid;
-                justify-content: center;
-                align-items: center;
-                gap: 20px;
-                border-right: 1px solid getColor(color02);
-                .review {
-                    width: 100%;
-                    display: grid;
-                    grid-template-columns: 1fr 3fr;
-                    justify-content: center;
-                    align-items: center;
-                    padding-bottom: 10px;
-                    .review-img {
-                        width: 40px;
-                        img {
-                            width: 100%;
-                            border-radius: 50%;
-                        }
+        }
+    }
+    .tab-buttons{
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-image: linear-gradient(45deg, #27ff01, #a053df);
+        border-image-slice: 1;
+        @include mobile{
+            border: none;
+        }
+        .nav-link{
+            border-radius: none !important;
+            color: #ffffff;
+
+            .image{
+                width: 70px;
+                height: 70px;
+                aspect-ratio: 4/4;
+                object-fit: cover;
+                object-position: top;
+            }
+            &.active{
+                background-color: transparent;
+                border-bottom: 2px;
+                border-style: solid;
+                border-image: linear-gradient(45deg,#a053df, #27ff01);
+                border-image-slice: 1;
+                position: relative;
+
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 15%;
+                    right: -39.6%;
+                    width: 10px;
+                    height: 40px;
+                    border-radius: 100vmax;
+                    background-image: linear-gradient(45deg, #27ff01, #a053df);
+                    isolation: isolate;
+                    z-index: 9;
+                    -webkit-transition: all 3s;
+                    transition: all 3s;
+
+                    @include tablet{
+                        right: -10.6%;
                     }
-                    .review-text {
-                        h3 {
-                            color: getColor(color02);
-                            margin-bottom: 10px;
-                            font-size: 19px;
-                        }
-                        p {
-                            color: getColor(color02);
-                            font-size: 15px;
-                        }
-                    }
-                }
-                .rev-1 {
-                    border-bottom: 1px solid getColor(color02);
+                   
                 }
             }
-            .emp-students-wrap {
-                display: grid;
-                justify-content: center;
-                align-items: center;
-                padding-left: 40px;
-                h2 {
-                    color: getColor(color02);
-                    font-size: 28px;
-                }
-                div {
-                    margin-bottom: 10px;
-                    img {
-                        width: 20px;
-                    }
-                }
-                .emp-p-1 {
-                    color: getColor(color02);
-                    font-size: 16px;
-                }
-                .emp-p-2 {
-                    color: getColor(color02);
-                    font-size: 16px;
-                }
-            }
+        }
+    }
+
+    .tab-content{
+        .stars{
+           gap: 15px;
         }
     }
 }
