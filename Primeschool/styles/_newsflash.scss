@@ -1,3 +1,121 @@
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@300&family=Raleway&display=swap');
+
+$color1: black;
+$color2: #fff;
+$color3: #17A1FA;
+$color4: linear-gradient(231.14deg, #17A1FA 9.86%, #40FFC7 82.93%);
+
+#newsflash{
+  background-color: $color2;
+  
+  .header{
+    position: relative;
+    width: 655px;
+    height: 133px;
+
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 95px;
+    line-height: 110.5%;
+    background: $color4;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+  }
+
+  #pr{
+    color: $color1;
+    position: relative;
+    width: auto;
+    height: 37px;
+    background: none;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  #pr-head{
+    font-family: "Raleway", sans-serif;
+    color: #17171F;
+    position: relative;
+    height: 79px;
+    width: auto;
+    left: 2em;
+    background: none;
+    color: black;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 1.4em;
+    line-height: 40px;
+    letter-spacing: 0.1px
+  }
+
+  #pr-date{
+    background: none;
+    position: relative;
+    color: $color1;
+    font-family: "lato", sans-serif;
+    font-size: 1.6em;
+    height: 5px;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+
+  #pr-text{
+    font-family: "Raleway" sans-serif;
+    background: none;
+    height: 30px;
+    width: auto;
+    color: $color1;
+    font-family: "lato", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    letter-spacing: 0.5px;
+    position: relative;
+    left: 3.2em;
+  }
+
+  .arrow-wrapper{
+    div{
+      position: relative;
+      top: -2em;
+        .arrowl{
+          margin-right: 2em;
+          cursor: pointer;
+          &:active{
+            background-color: $color2;
+          }
+          &:hover{
+            background-color: $color2;
+          }
+        }
+        .arrowr{
+          font-size: 20px;
+          cursor: pointer;
+          text-decoration: none;
+          transition: background-color 1s ease-out;
+          &:active{
+            background-color: $color2;
+          }
+          &:hover{
+            background-color: $color2;
+          }
+        }
+    }
+  }
+
+  .owl-carousel{
+    img[alt=news_image]{
+      border-radius: 1.4em;
+    }    
+  }
+=======
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@300&family=Raleway&display=swap');
 
 $color1: black;
@@ -114,4 +232,5 @@ $color4: linear-gradient(231.14deg, #17A1FA 9.86%, #40FFC7 82.93%);
       border-radius: 1.4em;
     }    
   }
+>>>>>>> caf8a215fe9260c15baca673cc03f08d53f1d971
 }

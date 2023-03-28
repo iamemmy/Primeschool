@@ -178,21 +178,23 @@
   color: #fff;
 }
 
-body {
-  width: 100%;
+footer {
+  position: relative;
+  bottom: -5rem;
 }
-body #card {
+footer #card {
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
-  margin-left: -2.5em;
+  position: relative;
+  left: -3.5em;
   border: none;
 }
-body #imgv {
+footer #imgv {
   height: 260px;
   width: 320px;
 }
-body #overlay {
+footer #overlay {
   display: flex;
   justify-content: flex-start;
   height: -moz-fit-content;
@@ -200,25 +202,25 @@ body #overlay {
   width: -moz-fit-content;
   width: fit-content;
 }
-body #c0h {
+footer #c0h {
   font-size: 1.8em;
   position: relative;
   left: -1.45em;
 }
-body #c0sh1 {
+footer #c0sh1 {
   position: relative;
   top: -1.2em;
   left: -4em;
   font-size: 0.65em;
 }
-body #c0sh2 {
+footer #c0sh2 {
   position: relative;
   left: -1.9em;
 }
-body #textc {
+footer #textc {
   width: 12em;
 }
-body #c0text {
+footer #c0text {
   display: flex;
   justify-content: flex-start;
   position: relative;
@@ -228,47 +230,47 @@ body #c0text {
   width: 100%;
   text-align: start;
 }
-body #slinks {
+footer #slinks {
   background: none;
-  color: white;
+  color: #fff;
   position: relative;
   left: -3.2em;
 }
-body #sl {
+footer #sl {
   text-decoration: none;
   background: none;
-  color: white;
+  color: #fff;
   margin-left: 0.5em;
 }
-body #c1 {
+footer #c1 {
   font-size: 0.8em;
   line-height: 2.2em;
 }
-body #c1h {
+footer #c1h {
   font-size: 1.3em;
 }
-body #c2 {
+footer #c2 {
   font-size: 0.8em;
   line-height: 2.2em;
 }
-body #c2h {
+footer #c2h {
   font-size: 1.3em;
 }
-body #c3 {
+footer #c3 {
   font-size: 0.8em;
   line-height: 2.2em;
 }
-body #c3h {
+footer #c3h {
   font-size: 1.3em;
 }
-body #c4 {
+footer #c4 {
   font-size: 0.8em;
   line-height: 2.2em;
 }
-body #c4h {
+footer #c4h {
   font-size: 1.3em;
 }
-body #inputE {
+footer #inputE {
   font-size: 1.1em;
   width: 15em;
   height: 2.9em;
@@ -276,44 +278,44 @@ body #inputE {
   margin-bottom: 1.5em;
   padding-bottom: 1em;
   border: 4px lightcyan;
-  background-color: rgba(236, 250, 210, 0.8078431373);
+  background-color: rgba(234, 255, 196, 0.8078431373);
   box-shadow: 30px 30px 80px rgba(240, 239, 220, 0.09);
 }
-body #subB {
+footer #subB {
   margin-bottom: 3em;
   margin-left: 0.7em;
   background: linear-gradient(231.14deg, #17A1FA 9.86%, #40FFC7 82.93%);
-  color: white;
+  color: #fff;
   width: 12em;
   height: 2.8em;
   border-radius: 0.5em;
   border: 1px solid lightskyblue;
 }
-body #btmf {
-  color: white;
-  width: 100vw;
+footer #btmf {
+  color: #fff;
+  position: relative;
+  left: -2rem;
+  width: 101vw;
   background-color: #17A1FA;
   overflow-x: hidden;
 }
-body #ct {
+footer #ct {
   font-size: 0.85em;
 }
 
 #newsflash {
-  margin-bottom: 15em;
+  background-color: #fff;
 }
-#newsflash #header {
+#newsflash .header {
   position: relative;
   width: 655px;
   height: 133px;
-  left: 0.2em;
-  top: 1em;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 95px;
   line-height: 110.5%;
-  background: linear-gradient(255.29deg, #17A1FA 28.19%, #40FFC7 89.13%);
+  background: linear-gradient(231.14deg, #17A1FA 9.86%, #40FFC7 82.93%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -321,50 +323,43 @@ body #ct {
           text-emphasis-color: transparent;
 }
 #newsflash #pr {
-  color: #17171F;
+  color: black;
   position: relative;
   width: auto;
   height: 37px;
-  left: 0.8em;
-  right: 79.93%;
-  top: 4.2em;
   background: none;
-  color: black;
-  font-family: "Inter", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: bolder;
   font-size: 24px;
   line-height: 40px;
 }
-#newsflash .pr-head {
-  font-family: "Raleway" sans-serif;
+#newsflash #pr-head {
+  font-family: "Raleway", sans-serif;
   color: #17171F;
   position: relative;
   height: 79px;
   width: auto;
-  left: 19em;
-  top: 1em;
+  left: 2em;
   background: none;
   color: black;
   font-style: normal;
-  font-weight: 700;
-  font-size: 1.6em;
+  font-weight: bolder;
+  font-size: 1.4em;
   line-height: 40px;
   letter-spacing: 0.1px;
 }
-#newsflash .pr-date {
+#newsflash #pr-date {
   background: none;
+  position: relative;
   color: black;
   font-family: "lato", sans-serif;
   font-size: 1.6em;
   height: 5px;
   letter-spacing: 1px;
-  font-weight: 600;
-  position: relative;
-  top: 5.15em;
-  left: 0.9em;
+  font-weight: 300;
 }
-#newsflash .pr-text {
+#newsflash #pr-text {
   font-family: "Raleway" sans-serif;
   background: none;
   height: 30px;
@@ -372,53 +367,40 @@ body #ct {
   color: black;
   font-family: "lato", sans-serif;
   font-size: 1em;
-  font-weight: 550;
+  font-weight: 300;
+  letter-spacing: 1.5px;
   letter-spacing: 0.5px;
   position: relative;
-  top: 1.4em;
-  left: 30.5em;
+  left: 3.2em;
 }
-#newsflash #sectioncol {
+#newsflash .arrow-wrapper div {
   position: relative;
-  left: 17vh;
+  top: -2em;
 }
-#newsflash #carousel {
-  position: relative;
-  top: -5vh;
-  width: 87em;
+#newsflash .arrow-wrapper div .arrowl {
+  margin-right: 2em;
+  cursor: pointer;
 }
-#newsflash #cslides {
-  width: 87%;
-}
-#newsflash #nfimg {
-  position: relative;
-  top: 18vh;
-  left: 0em;
-  width: 87%;
-  border-radius: 28px;
-  height: 25vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-#newsflash #arrows {
-  background: none;
-  width: -moz-fit-content;
-  width: fit-content;
-  position: relative;
-  top: 4vh;
-  left: 35vw;
-}
-#newsflash #prev {
-  margin-right: 1.25em;
-}
-#newsflash #prev:hover, #newsflash .carousel-button-prev:focus {
+#newsflash .arrow-wrapper div .arrowl:active {
   background-color: #fff;
 }
-#newsflash #next:hover, #newsflash .carousel-button-prev:focus {
+#newsflash .arrow-wrapper div .arrowl:hover {
   background-color: #fff;
 }
-#newsflash #newsflashcar {
-  width: auto;
+#newsflash .arrow-wrapper div .arrowr {
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 1s ease-out;
+}
+#newsflash .arrow-wrapper div .arrowr:active {
+  background-color: #fff;
+}
+#newsflash .arrow-wrapper div .arrowr:hover {
+  background-color: #fff;
+}
+#newsflash .owl-carousel img[alt=news_image] {
+  border-radius: 1.4em;
 }
 .studyBG {
   background-color: #FFFFFF;

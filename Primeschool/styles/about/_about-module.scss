@@ -1,0 +1,37 @@
+// GENERAL
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    // outline: 1px solid green;
+}
+
+//Variable
+$colors:(
+    color01: #000000,
+    color02: #FFFFFF,
+    color03: #40FFC7,
+    color04: #18A2FB,
+    color05: #0538FF,
+    color06: #0C0C0F,
+    gradient01: linear-gradient(285deg, rgb(5, 56, 255) 9.18%, #40FFC7 90.82%),
+    gradient02: linear-gradient(115.35deg, #17A1FA 15.13%, #40FFC7 78.95%)
+);
+
+// Function
+@function getColor($key){
+    @return map-get($colors, $key);
+}
+
+// Mixin
+@mixin portrait{
+    @media (max-width: 768.2px){
+        @content;
+    }
+}
+@mixin landscape{
+    @media (max-width: 992.2px){
+        @content;
+    }
+}
