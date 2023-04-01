@@ -324,6 +324,25 @@
   color: #FFFFFF;
   text-align: center;
 }
+#staff-area .staff-area-sub .each-staff-wrapper {
+  width: 100%;
+}
+#staff-area .staff-area-sub .each-staff-wrapper .each-staff .staff-image {
+  margin-bottom: 15px;
+}
+#staff-area .staff-area-sub .each-staff-wrapper .each-staff .staff-image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#staff-area .staff-area-sub .each-staff-wrapper .each-staff .staff-data h2 {
+  color: #FFFFFF;
+  font-size: 22px;
+}
+#staff-area .staff-area-sub .each-staff-wrapper .each-staff .staff-data p {
+  color: #FFFFFF;
+  font-size: 14px;
+}
 #staff-area .staff-area-sub .card-view-all {
   -webkit-text-decoration: underline #17A1FA;
           text-decoration: underline #17A1FA;
