@@ -147,4 +147,134 @@ footer{
 #ct{
   font-size: 0.85em;
 }
+   @media (max-width:1334px) {
+        #c1 {
+            margin-left: 3em;
+        }
+
+        #btmf {
+            width: 104vw;
+        }
+    }
+
+    @media (max-width:1280px) {
+        #c1 {
+            margin-left: 5em;
+        }
+
+        #btmf {
+            width: 106vw;
+        }
+    }
+
+    @media (max-width:1050px) {
+        #c1 {
+            margin-left: 7em;
+        }
+
+        #btmf {
+            width: 108vw;
+        }
+    }
+
+    @media (max-width:950px) {
+        #c1 {
+            margin-left: 9em;
+        }
+
+        #btmf {
+            width: 110vw;
+        }
+    }
+
+    @media (max-width:905px) {
+        #btmf {
+            width: 112vw;
+        }
+    }
+
+    @media (max-width:850px) {
+        #c1 {
+            margin-left: 11em;
+        }
+
+        #btmf {
+            width: 114vw;
+        }
+    }
+
+    @media (max-width:769px) {
+        #imgv {
+            opacity: 0;
+            border: none;
+        }
+
+        #c1 {
+            position: relative;
+            left: 0;
+
+            &::before {
+                content: "";
+            }
+        }
+
+        #btmf {
+            visibility: hidden;
+        }
+
+        #c3 {
+            position: relative;
+            left: -3.5em;
+        }
+
+        #c4 {
+            position: relative;
+            left: 14em;
+
+            #inputE {
+                background-color: #e0dedeea;
+                width: 24em;
+            }
+        }
+    }
+
+    @media (max-width:380px) {
+        #c1 {
+            position: relative;
+            left: -13em;
+
+            &::before {
+                content: ".c";
+            }
+        }
+
+        #c2 {
+            position: relative;
+            top: -15.7em;
+            left: 6em;
+        }
+
+        #c3 {
+            position: relative;
+            top: -9em;
+            left: -7em;
+        }
+
+        #c4 {
+            position: relative;
+            left: -6em;
+            top: -9em;
+
+            #inputE {
+                position: relative;
+                left: 7.5em;
+                background-color: #e0dedeea;
+                width: 24em;
+            }
+        }
+
+        #btmf {
+            width: 0vw;
+        }
+    }
 }
