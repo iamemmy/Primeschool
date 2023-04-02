@@ -5,145 +5,284 @@ $color2: #fff;
 $color3: #17A1FA;
 $color4: linear-gradient(231.14deg, #17A1FA 9.86%, #40FFC7 82.93%);
 
-footer{
-  position: relative;
-  bottom: -5rem;
-#card{
-  height: fit-content;
-  width: 100%;
-  position: relative;
-  left: -3.5em;
-  border: none;
-}
 
-#imgv{
-  height: 260px;
-  width: 320px;
-}
+footer {
+    position: relative;
+    bottom: -5rem;
 
-#overlay{
-  display: flex;
-  justify-content: flex-start;
-  height: fit-content;
-  width: fit-content;
-}
+    #card {
+        height: fit-content;
+        width: 100%;
+        position: relative;
+        left: -3.5em;
+        border: none;
+    }
 
-#c0h{
-  font-size: 1.8em;
-  position: relative;
-  left: -1.45em;
-}
+    #imgv {
+        height: 260px;
+        width: 320px;
+    }
 
-#c0sh1{
-  position: relative;
-  top: -1.2em;
-  left: -4em;
-  font-size: 0.65em;
-}
+    #overlay {
+        display: flex;
+        justify-content: flex-start;
+        height: fit-content;
+        width: fit-content;
+    }
 
-#c0sh2{
-  position: relative;
-  left: -1.9em;
-}
+    #c0h {
+        font-size: 1.8em;
+        position: relative;
+        left: -1.45em;
+    }
 
-#textc{
-  width: 12em;
-}
+    #c0sh1 {
+        position: relative;
+        top: -1.2em;
+        left: -4em;
+        font-size: 0.65em;
+    }
 
-#c0text{
-  display: flex;
-  justify-content: flex-start;
-  position: relative;
-  left: 1.7em;
-  font-size: 0.55em;
-  line-height: 1.3em;
-  width: 100%;
-  text-align: start;
-}
+    #c0sh2 {
+        position: relative;
+        left: -1.9em;
+    }
 
-#slinks{
-  background: none;
-  color: $color2;
-  position: relative;
-  left: -3.2em;
-}
+    #textc {
+        width: 12em;
+    }
 
-#sl{
-  text-decoration: none;
-  background: none;
-  color: $color2;
-  margin-left: 0.5em;
-}
+    #c0text {
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        left: 1.7em;
+        font-size: 0.55em;
+        line-height: 1.3em;
+        width: 100%;
+        text-align: start;
+    }
 
-#c1{
-  font-size: 0.8em;
-  line-height: 2.2em;
-}
+    #slinks {
+        background: none;
+        color: $color2;
+        position: relative;
+        left: -3.2em;
+    }
 
-#c1h{
-  font-size: 1.3em;
-}
+    #sl {
+        text-decoration: none;
+        background: none;
+        color: $color2;
+        margin-left: 0.5em;
+    }
 
-#c2{
-  font-size: 0.8em;
-  line-height: 2.2em;
-}
+    #c1 {
+        font-size: 0.8em;
+        line-height: 2.2em;
+    }
 
-#c2h{
-  font-size: 1.3em;
-}
+    #c1h {
+        font-size: 1.3em;
+    }
 
-#c3{
-  font-size: 0.8em;
-  line-height: 2.2em;
-}
+    #c2 {
+        font-size: 0.8em;
+        line-height: 2.2em;
+    }
 
-#c3h{
-  font-size: 1.3em;
-}
+    #c2h {
+        font-size: 1.3em;
+    }
 
-#c4{
-  font-size: 0.8em;
-  line-height: 2.2em;
-}
+    #c3 {
+        font-size: 0.8em;
+        line-height: 2.2em;
+    }
 
-#c4h{
-  font-size: 1.3em;
-}
+    #c3h {
+        font-size: 1.3em;
+    }
 
-#inputE{
-  font-size: 1.1em;
-  width: 15em;
-  height: 2.9em;
-  margin-top: 1.4em;
-  margin-bottom: 1.5em;
-  padding-bottom: 1em;
-  border: 4px lightcyan;
-  background-color: #eaffc4ce;
-  box-shadow: 30px 30px 80px rgba(240, 239, 220, 0.09);
-}
+    #c4 {
+        font-size: 0.8em;
+        line-height: 2.2em;
+    }
 
-#subB{
-  margin-bottom: 3em;
-  margin-left: 0.7em;
-  background: $color4;
-  color: $color2;
-  width: 12em;
-  height: 2.8em;
-  border-radius: 0.5em;
-  border: 1px solid lightskyblue;
-}
+    #c4h {
+        font-size: 1.3em;
+    }
 
-#btmf{
-  color: $color2;
-  position: relative;
-  left: -2rem;
-  width: 101vw;
-  background-color: $color3;
-  overflow-x: hidden;
-}
+    #inputE {
+        font-size: 1.1em;
+        width: 15em;
+        height: 2.9em;
+        margin-top: 1.4em;
+        margin-bottom: 1.5em;
+        padding-bottom: 1em;
+        border: 4px lightcyan;
+        background-color: #eaffc4ce;
+        box-shadow: 30px 30px 80px rgba(240, 239, 220, 0.09);
+    }
 
-#ct{
-  font-size: 0.85em;
-}
+    #subB {
+        margin-bottom: 3em;
+        margin-left: 0.7em;
+        background: $color4;
+        color: $color2;
+        width: 12em;
+        height: 2.8em;
+        border-radius: 0.5em;
+        border: 1px solid lightskyblue;
+    }
+
+    #btmf {
+        color: $color2;
+        position: relative;
+        left: -2rem;
+        height: 3em;
+        display: flex;
+        justify-content: center;
+        width: 101vw;
+        background-color: $color3;
+        overflow-x: hidden;
+    }
+
+    #ct {
+        position: relative;
+        top: -3em;
+        left: 1em;
+        font-size: 0.85em;
+    }
+
+    @media (max-width:1334px) {
+        #c1 {
+            margin-left: 3em;
+        }
+
+        #btmf {
+            width: 104vw;
+        }
+    }
+
+    @media (max-width:1280px) {
+        #c1 {
+            margin-left: 5em;
+        }
+
+        #btmf {
+            width: 106vw;
+        }
+    }
+
+    @media (max-width:1050px) {
+        #c1 {
+            margin-left: 7em;
+        }
+
+        #btmf {
+            width: 108vw;
+        }
+    }
+
+    @media (max-width:950px) {
+        #c1 {
+            margin-left: 9em;
+        }
+
+        #btmf {
+            width: 110vw;
+        }
+    }
+
+    @media (max-width:905px) {
+        #btmf {
+            width: 112vw;
+        }
+    }
+
+    @media (max-width:850px) {
+        #c1 {
+            margin-left: 11em;
+        }
+
+        #btmf {
+            width: 114vw;
+        }
+    }
+
+    @media (max-width:769px) {
+        #imgv {
+            opacity: 0;
+            border: none;
+        }
+
+        #c1 {
+            position: relative;
+            left: 0;
+
+            &::before {
+                content: "";
+            }
+        }
+
+        #btmf {
+            visibility: hidden;
+        }
+
+        #c3 {
+            position: relative;
+            left: -3.5em;
+        }
+
+        #c4 {
+            position: relative;
+            left: 14em;
+
+            #inputE {
+                background-color: #e0dedeea;
+                width: 24em;
+            }
+        }
+    }
+
+    @media (max-width:380px) {
+        #c1 {
+            position: relative;
+            left: -13em;
+
+            &::before {
+                content: ".c";
+            }
+        }
+
+        #c2 {
+            position: relative;
+            top: -15.7em;
+            left: 6em;
+        }
+
+        #c3 {
+            position: relative;
+            top: -9em;
+            left: -7em;
+        }
+
+        #c4 {
+            position: relative;
+            left: -6em;
+            top: -9em;
+
+            #inputE {
+                position: relative;
+                left: 7.5em;
+                background-color: #e0dedeea;
+                width: 24em;
+            }
+        }
+
+        #btmf {
+            width: 0vw;
+        }
+    }
 }
