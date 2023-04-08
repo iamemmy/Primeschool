@@ -127,7 +127,7 @@ $color4: linear-gradient(231.14deg, #17A1FA 9.86%, #40FFC7 82.93%);
         }
     }
 
-    @media (max-width:860px) {
+    @media (max-width:850px) {
         height: fit-content;
 
         #news {
@@ -144,13 +144,15 @@ $color4: linear-gradient(231.14deg, #17A1FA 9.86%, #40FFC7 82.93%);
         }
 
         #pr-head {
-            width: 10em;
+            left: -4em;
+            width: 28em;
         }
 
         #pr-text {
             position: relative;
             top: 4em;
-            width: 20em;
+            left: -7em;
+            width: 30.6em;
         }
 
         #carousel {
@@ -265,13 +267,13 @@ $color4: linear-gradient(231.14deg, #17A1FA 9.86%, #40FFC7 82.93%);
         .arrow-wrapper {
             position: relative;
             left: 1em;
-            top: 14em;
+            top: 17em;
 
             &::before {
                 content: "5min ago";
                 position: relative;
                 left: 1em;
-                top: -3.55em;
+                top: -6.45em;
             }
         }
     }
