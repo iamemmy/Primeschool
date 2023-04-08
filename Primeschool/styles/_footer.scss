@@ -5,7 +5,6 @@ $color2: #fff;
 $color3: #17A1FA;
 $color4: linear-gradient(231.14deg, #17A1FA 9.86%, #40FFC7 82.93%);
 
-
 footer {
     position: relative;
     bottom: -5rem;
@@ -19,11 +18,15 @@ footer {
     }
 
     #imgv {
+        position: relative;
+        top: 0.8em;
         height: 260px;
         width: 320px;
     }
 
     #overlay {
+        z-index: 1;
+        color: #17171F;
         display: flex;
         justify-content: flex-start;
         height: fit-content;
@@ -31,15 +34,18 @@ footer {
     }
 
     #c0h {
+        color: $color2;
         font-size: 1.8em;
         position: relative;
-        left: -1.45em;
+        top: 1em;
+        left: -20.89em;
     }
 
     #c0sh1 {
+        color: $color2;
         position: relative;
-        top: -1.2em;
-        left: -4em;
+        top: 1.5em;
+        left: -58em;
         font-size: 0.65em;
     }
 
@@ -53,10 +59,12 @@ footer {
     }
 
     #c0text {
+        color: $color2;
         display: flex;
         justify-content: flex-start;
         position: relative;
-        left: 1.7em;
+        top: 3em;
+        left: 3.5em;
         font-size: 0.55em;
         line-height: 1.3em;
         width: 100%;
@@ -114,15 +122,16 @@ footer {
     }
 
     #inputE {
+        color: $color1;
         font-size: 1.1em;
         width: 15em;
         height: 2.9em;
         margin-top: 1.4em;
         margin-bottom: 1.5em;
         padding-bottom: 1em;
-        border: 4px lightcyan;
-        background-color: #eaffc4ce;
-        box-shadow: 30px 30px 80px rgba(240, 239, 220, 0.09);
+        border: 4px rgb(190, 190, 190);
+        background-color: #f8fdf0ce;
+        box-shadow: 30px 30px 80px rgba(185, 185, 180, 0.09);
     }
 
     #subB {
@@ -139,19 +148,17 @@ footer {
     #btmf {
         color: $color2;
         position: relative;
+        height: fit-content;
         left: -2rem;
-        height: 3em;
-        display: flex;
-        justify-content: center;
         width: 101vw;
         background-color: $color3;
         overflow-x: hidden;
     }
 
     #ct {
-        position: relative;
-        top: -3em;
-        left: 1em;
+        margin-top: -2.3em;
+        padding: 0;
+        overflow: hidden;
         font-size: 0.85em;
     }
 
@@ -160,12 +167,30 @@ footer {
             margin-left: 3em;
         }
 
+        #c0h {
+            left: -20.65em;
+        }
+
+        #c0sh1 {
+            left: -57em;
+        }
+
         #btmf {
             width: 104vw;
         }
     }
 
     @media (max-width:1280px) {
+        #c0h {
+            top: 1em;
+            left: -19.59em;
+        }
+
+        #c0sh1 {
+            top: 1.5em;
+            left: -54.3em;
+        }
+
         #c1 {
             margin-left: 5em;
         }
@@ -182,6 +207,29 @@ footer {
 
         #btmf {
             width: 108vw;
+        }
+
+        #c0h {
+            top: 1em;
+            left: -15.59em;
+        }
+
+        #c0sh1 {
+            top: 1.5em;
+            left: -43.3em;
+        }
+
+        #c0sh2 {
+            position: relative;
+            left: -1.9em;
+        }
+
+        #textc {
+            width: 12em;
+        }
+
+        #c0text {
+            top: 3em;
         }
     }
 
@@ -202,24 +250,86 @@ footer {
     }
 
     @media (max-width:850px) {
+        #imgv {
+            visibility: hidden;
+            border: none;
+        }
+
+        #c0text {
+            width: 40em;
+            top: -2em;
+            left: 9.3em;
+            font-size: 1em;
+            color: $color1;
+        }
+
+        #slinks {
+            #sl {
+                color: $color1;
+            }
+
+            margin-right: -20em;
+            width: 18em;
+            display: flex;
+            justify-content: space-between;
+            left: 5em;
+            font-size: 1.8em;
+        }
+
         #c1 {
-            margin-left: 11em;
+            position: relative;
+            left: -7em;
         }
 
         #btmf {
-            width: 114vw;
+            visibility: hidden;
+        }
+
+        #c3 {
+            position: relative;
+            left: -13em;
+        }
+
+        #c4 {
+            position: relative;
+            left: 6.88em;
+
+            #inputE {
+                background-color: #eeeded;
+                width: 24em;
+            }
         }
     }
 
     @media (max-width:769px) {
         #imgv {
-            opacity: 0;
+            visibility: hidden;
             border: none;
+        }
+
+        #c0text {
+            width: 30em;
+            top: -2em;
+            left: 6.8em;
+            font-size: 1em;
+            color: $color1;
+        }
+
+        #slinks {
+            #sl {
+                color: $color1;
+            }
+
+            width: 17em;
+            display: flex;
+            justify-content: space-between;
+            left: 3.5em;
+            font-size: 1.8em;
         }
 
         #c1 {
             position: relative;
-            left: 0;
+            left: -7em;
 
             &::before {
                 content: "";
@@ -232,31 +342,47 @@ footer {
 
         #c3 {
             position: relative;
-            left: -3.5em;
+            left: -10em;
         }
 
         #c4 {
             position: relative;
-            left: 14em;
+            left: 7.38em;
 
             #inputE {
-                background-color: #e0dedeea;
+                background-color: #eeeded;
                 width: 24em;
             }
         }
     }
 
     @media (max-width:380px) {
+        #c0text {
+            width: 16em;
+            top: -2em;
+            font-size: 1em;
+            color: $color1;
+        }
+
+        #slinks {
+            #sl {
+                color: $color1;
+            }
+
+            width: 9em;
+            display: flex;
+            justify-content: space-between;
+            left: 1.7em;
+            font-size: 1.8em;
+        }
+
         #c1 {
             position: relative;
             left: -13em;
-
-            &::before {
-                content: ".c";
-            }
         }
 
         #c2 {
+            color: $color1;
             position: relative;
             top: -15.7em;
             left: 6em;
@@ -264,19 +390,19 @@ footer {
 
         #c3 {
             position: relative;
-            top: -9em;
+            top: -14em;
             left: -7em;
         }
 
         #c4 {
+            margin-bottom: -30em;
             position: relative;
             left: -6em;
-            top: -9em;
+            top: -13.5em;
 
             #inputE {
                 position: relative;
-                left: 7.5em;
-                background-color: #e0dedeea;
+                left: 6em;
                 width: 24em;
             }
         }
