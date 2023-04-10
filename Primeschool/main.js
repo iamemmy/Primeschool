@@ -108,7 +108,6 @@ $(document).ready(function() {
     // END OF ABOUT US NAVIGATION SCRIPT
 
 
-
       // FORM Scripts
 const form = document.querySelector("form");
 form.addEventListener("submit", e => {
