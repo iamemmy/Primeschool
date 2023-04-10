@@ -11,7 +11,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="styles/about/about.css">
 
     <link
     rel="stylesheet"
@@ -27,6 +26,8 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
+    <link rel="stylesheet" href="/Primeschool/styles/glider.min.css">
+    <link rel="stylesheet" href="./styles/about/about.css">
 </head>
 
 <body>
@@ -198,44 +199,46 @@
             </div>
 
             <!-- STAFFS PENDING -->
-            <div class="row each-staff-wrapper owl-carousel">
-                <div class="col-12 col-md-3 each-staff">
-                    <div class="staff-image">
-                        <img src="/media/kate.png" alt="" class="img-fluid">
+            <div class="glider glider-wrap">
+                <div class="card-staff">
+                    <div class="card-img">
+                        <img src="/media/kate.png" alt="">
                     </div>
-                    <div class="staff-data">
-                        <h2>KATHRYN MURPHY</h2>
+                    <div class="card-text">
+                        <h3>KATHRYN MURPHY</h3>
                         <p>BIOLOGY LECTURER</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 col-sm-12 each-staff">
-                    <div class="staff-image">
-                        <img src="/media/vp-academics.png" alt="" class="img-fluid">
+                <div class="card-staff">
+                    <div class="card-img">
+                        <img src="/media/vp-academics.png" alt="">
                     </div>
-                    <div class="staff-data">
-                        <h2>ROBERT FOX</h2>
+                    <div class="card-text">
+                        <h3>ROBERT FOX</h3>
                         <p>BUSINESS LECTURER</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 col-sm-12 each-staff">
-                    <div class="staff-image">
-                        <img src="/media/vp-admin.png" alt="" class="img-fluid">
+                <div class="card-staff">
+                    <div class="card-img">
+                        <img src="/media/vp-admin.png" alt="">
                     </div>
-                    <div class="staff-data">
-                        <h2>LESLIE ALEXANDER</h2>
+                    <div class="card-text">
+                        <h3>LESLIE ALEXANDER</h3>
                         <p>ART LECTURER</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 col-sm-12 each-staff">
-                    <div class="staff-image">
-                        <img src="/media/hawkins.png" alt="" class="img-fluid">
+                <div class="card-staff">
+                    <div class="card-img">
+                        <img src="/media/hawkins.png" alt="">
                     </div>
-                    <div class="staff-data">
-                        <h2>GUY HAWKINS</h2>
-                        <p>BIOLOGY LECTURER</p>
+                    <div class="card-text">
+                        <h3>GUY HAWKINS</h3>
+                        <p>MUSIC LECTURER</p>
                     </div>
                 </div>
             </div>
+
+            <div id="dots" class="glider-dots"></div>
             <!-- View more link -->
             <a href="#" class="card-view-all">VIEW MORE</a>
         </div>
@@ -459,29 +462,7 @@
                     </div>
 
                 </div>
-                <div class="emp-students-wrap">
-                    <h2>
-                        Empowering students to become lifelong learners
-                    </h2>
-                    <div>
-                        <img src="../media/star.png" alt="rating">
-                        <img src="../media/star.png" alt="rating">
-                        <img src="../media/star.png" alt="rating">
-                        <img src="../media/star.png" alt="rating">
-                        <img src="../media/star.png" alt="rating">
-                    </div>
-                    <p class="emp-p-1">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci repudiandae facilis placeat
-                        eos deleniti excepturi itaque, accusantium culpa delectus ullam sapiente aut voluptatum
-                        consequatur id architecto dolorum ex qui enim quisquam aspernatur. Assumenda incidunt
-                        architecto at minus optio, saepe error.
-                    </p>
-                    <p class="emp-p-2">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat doloremque ducimus
-                        necessitatibus
-                        sapiente repellat dolores vel eligendi corporis eaque doloribus!
-                    </p>
-                </div>
+        
             </section>
         </div>
     </div>
@@ -638,6 +619,61 @@
 
     <script src="../Primeschool/main.js"></script>
     <script src="../Primeschool/about.js"></script>
+
+    <script src="/glider.min.js"></script>
+    <script>
+
+        new Glider(document.querySelector('.glider'), {
+            draggable: true,
+            dots: '#dots',
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            },
+            responsive: [
+                {
+                breakpoint: 500,
+                settings: {
+
+                    slidesToShow: '1',
+                    slidesToScroll: '1',
+                    itemWidth: 150,
+                    duration: 0.25,
+                    }
+                },
+                {
+                breakpoint: 680,
+                settings: {
+
+                    slidesToShow: '2',
+                    slidesToScroll: '1',
+                    itemWidth: 150,
+                    duration: 0.25,
+                    }
+                },
+                {
+                breakpoint: 800,
+                settings: {
+
+                    slidesToShow: '3',
+                    slidesToScroll: '1',
+                    itemWidth: 150,
+                    duration: 0.25,
+                    }
+                },
+                {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    itemWidth: 150,
+                    duration: 0.25
+                }
+                }
+            ]
+        })
+
+    </script>
 </body>
 
 </html>

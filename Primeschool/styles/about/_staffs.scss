@@ -61,24 +61,32 @@
             }
         }
         // staffs card
-        .each-staff-wrapper {
-            width: 100%;
-            .each-staff {
-                .staff-image {
-                    margin-bottom: 15px;
-                    img {
-                        width: 100%;
-                        object-fit: cover;
-                    }
+        .glider-wrap {
+            .card-staff {
+                padding: 10px;
+                .card-img {
+                    //
                 }
-                .staff-data {
-                    h2 {
-                        color: getColor(color02);
-                        font-size: 22px;
+                .card-text {
+                    color: getColor(color02);
+                    padding: 18px 4px 4px 4px;
+                    h3 {
+                        font-size: 30px;
+                        @include mobile {
+                            font-size: 24px;
+                        }
+                        @include tablet {
+                            font-size: 27px;
+                        }
                     }
                     p {
-                        color: getColor(color02);
-                        font-size: 14px;
+                        font-size: 18px;
+                        @include mobile {
+                            font-size: 15px;
+                        }
+                        @include tablet {
+                            font-size: 16px;
+                        }
                     }
                 }
             }
@@ -91,11 +99,13 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
             cursor: pointer;
+            padding-left: 10px;
         }
     }
 }
 
 #testimonial-area{
+    padding-bottom: 100px !important;
     .heading{
         .dot{
             position: relative;

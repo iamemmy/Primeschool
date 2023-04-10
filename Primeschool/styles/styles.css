@@ -191,10 +191,14 @@ footer #card {
   border: none;
 }
 footer #imgv {
+  position: relative;
+  top: 0.8em;
   height: 260px;
   width: 320px;
 }
 footer #overlay {
+  z-index: 1;
+  color: #17171F;
   display: flex;
   justify-content: flex-start;
   height: -moz-fit-content;
@@ -203,14 +207,17 @@ footer #overlay {
   width: fit-content;
 }
 footer #c0h {
+  color: #fff;
   font-size: 1.8em;
   position: relative;
-  left: -1.45em;
+  top: 1em;
+  left: -20.89em;
 }
 footer #c0sh1 {
+  color: #fff;
   position: relative;
-  top: -1.2em;
-  left: -4em;
+  top: 1.5em;
+  left: -58em;
   font-size: 0.65em;
 }
 footer #c0sh2 {
@@ -221,10 +228,12 @@ footer #textc {
   width: 12em;
 }
 footer #c0text {
+  color: #fff;
   display: flex;
   justify-content: flex-start;
   position: relative;
-  left: 1.7em;
+  top: 3em;
+  left: 3.5em;
   font-size: 0.55em;
   line-height: 1.3em;
   width: 100%;
@@ -271,15 +280,16 @@ footer #c4h {
   font-size: 1.3em;
 }
 footer #inputE {
+  color: black;
   font-size: 1.1em;
   width: 15em;
   height: 2.9em;
   margin-top: 1.4em;
   margin-bottom: 1.5em;
   padding-bottom: 1em;
-  border: 4px lightcyan;
-  background-color: rgba(234, 255, 196, 0.8078431373);
-  box-shadow: 30px 30px 80px rgba(240, 239, 220, 0.09);
+  border: 4px rgb(190, 190, 190);
+  background-color: rgba(248, 253, 240, 0.8078431373);
+  box-shadow: 30px 30px 80px rgba(185, 185, 180, 0.09);
 }
 footer #subB {
   margin-bottom: 3em;
@@ -294,13 +304,222 @@ footer #subB {
 footer #btmf {
   color: #fff;
   position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
   left: -2rem;
   width: 101vw;
   background-color: #17A1FA;
   overflow-x: hidden;
 }
 footer #ct {
+  margin-top: -2.3em;
+  padding: 0;
+  overflow: hidden;
   font-size: 0.85em;
+}
+@media (max-width: 1334px) {
+  footer #c1 {
+    margin-left: 3em;
+  }
+  footer #c0h {
+    left: -20.65em;
+  }
+  footer #c0sh1 {
+    left: -57em;
+  }
+  footer #btmf {
+    width: 104vw;
+  }
+}
+@media (max-width: 1280px) {
+  footer #c0h {
+    top: 1em;
+    left: -19.59em;
+  }
+  footer #c0sh1 {
+    top: 1.5em;
+    left: -54.3em;
+  }
+  footer #c1 {
+    margin-left: 5em;
+  }
+  footer #btmf {
+    width: 106vw;
+  }
+}
+@media (max-width: 1050px) {
+  footer #c1 {
+    margin-left: 7em;
+  }
+  footer #btmf {
+    width: 108vw;
+  }
+  footer #c0h {
+    top: 1em;
+    left: -15.59em;
+  }
+  footer #c0sh1 {
+    top: 1.5em;
+    left: -43.3em;
+  }
+  footer #c0sh2 {
+    position: relative;
+    left: -1.9em;
+  }
+  footer #textc {
+    width: 12em;
+  }
+  footer #c0text {
+    top: 3em;
+  }
+}
+@media (max-width: 950px) {
+  footer #c1 {
+    margin-left: 9em;
+  }
+  footer #btmf {
+    width: 110vw;
+  }
+}
+@media (max-width: 905px) {
+  footer #btmf {
+    width: 112vw;
+  }
+}
+@media (max-width: 850px) {
+  footer #imgv {
+    visibility: hidden;
+    border: none;
+  }
+  footer #c0text {
+    width: 40em;
+    top: -2em;
+    left: 9.3em;
+    font-size: 1em;
+    color: black;
+  }
+  footer #slinks {
+    margin-right: -20em;
+    width: 18em;
+    display: flex;
+    justify-content: space-between;
+    left: 5em;
+    font-size: 1.8em;
+  }
+  footer #slinks #sl {
+    color: black;
+  }
+  footer #c1 {
+    position: relative;
+    left: -7em;
+  }
+  footer #btmf {
+    visibility: hidden;
+  }
+  footer #c3 {
+    position: relative;
+    left: -13em;
+  }
+  footer #c4 {
+    position: relative;
+    left: 6.88em;
+  }
+  footer #c4 #inputE {
+    background-color: #eeeded;
+    width: 24em;
+  }
+}
+@media (max-width: 769px) {
+  footer #imgv {
+    visibility: hidden;
+    border: none;
+  }
+  footer #c0text {
+    width: 30em;
+    top: -2em;
+    left: 6.8em;
+    font-size: 1em;
+    color: black;
+  }
+  footer #slinks {
+    width: 17em;
+    display: flex;
+    justify-content: space-between;
+    left: 3.5em;
+    font-size: 1.8em;
+  }
+  footer #slinks #sl {
+    color: black;
+  }
+  footer #c1 {
+    position: relative;
+    left: -7em;
+  }
+  footer #c1::before {
+    content: "";
+  }
+  footer #btmf {
+    visibility: hidden;
+  }
+  footer #c3 {
+    position: relative;
+    left: -10em;
+  }
+  footer #c4 {
+    position: relative;
+    left: 7.38em;
+  }
+  footer #c4 #inputE {
+    background-color: #eeeded;
+    width: 24em;
+  }
+}
+@media (max-width: 380px) {
+  footer #c0text {
+    width: 16em;
+    top: -2em;
+    font-size: 1em;
+    color: black;
+  }
+  footer #slinks {
+    width: 9em;
+    display: flex;
+    justify-content: space-between;
+    left: 1.7em;
+    font-size: 1.8em;
+  }
+  footer #slinks #sl {
+    color: black;
+  }
+  footer #c1 {
+    position: relative;
+    left: -13em;
+  }
+  footer #c2 {
+    color: black;
+    position: relative;
+    top: -15.7em;
+    left: 6em;
+  }
+  footer #c3 {
+    position: relative;
+    top: -14em;
+    left: -7em;
+  }
+  footer #c4 {
+    margin-bottom: -30em;
+    position: relative;
+    left: -6em;
+    top: -13.5em;
+  }
+  footer #c4 #inputE {
+    position: relative;
+    left: 6em;
+    width: 24em;
+  }
+  footer #btmf {
+    width: 0vw;
+  }
 }
 
 #newsflash {
@@ -402,6 +621,143 @@ footer #ct {
 #newsflash .owl-carousel img[alt=news_image] {
   border-radius: 1.4em;
 }
+@media (max-width: 1199px) {
+  #newsflash #pr-r2 {
+    margin-bottom: 3em;
+  }
+}
+@media (max-width: 850px) {
+  #newsflash {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #newsflash #news {
+    position: relative;
+    top: 24em;
+  }
+  #newsflash #pr {
+    display: none;
+  }
+  #newsflash #pr-date {
+    display: none;
+  }
+  #newsflash #pr-head {
+    left: -4em;
+    width: 28em;
+  }
+  #newsflash #pr-text {
+    position: relative;
+    top: 4em;
+    left: -7em;
+    width: 30.6em;
+  }
+  #newsflash #carousel {
+    position: relative;
+    top: -20em;
+  }
+  #newsflash .arrow-wrapper {
+    position: relative;
+    left: -3em;
+    top: 20em;
+  }
+}
+@media (max-width: 769px) {
+  #newsflash {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #newsflash #news {
+    position: relative;
+    top: 24em;
+  }
+  #newsflash #pr {
+    display: none;
+  }
+  #newsflash #pr-date {
+    display: none;
+  }
+  #newsflash #pr-head {
+    line-height: 1.2em;
+    position: relative;
+    left: -2.5em;
+    width: 10em;
+    font-size: 3em;
+  }
+  #newsflash #pr-head::after {
+    position: relative;
+    top: 3em;
+    left: -16.5em;
+    font-size: 0.4em;
+    content: "by Prime";
+  }
+  #newsflash #pr-text {
+    position: relative;
+    left: -7em;
+    top: 10em;
+    width: 30em;
+  }
+  #newsflash #carousel {
+    position: relative;
+    top: -20em;
+  }
+  #newsflash .arrow-wrapper {
+    position: relative;
+    left: -3em;
+    top: 24em;
+  }
+  #newsflash .arrow-wrapper::before {
+    content: "5min ago";
+    position: relative;
+    left: -11em;
+    top: -0.4em;
+  }
+}
+@media (max-width: 380px) {
+  #newsflash .header {
+    position: relative;
+    top: 1.3em;
+    left: 0.6em;
+    font-size: 60px;
+    width: 5em;
+  }
+  #newsflash #news {
+    top: 14em;
+  }
+  #newsflash #pr-head {
+    position: relative;
+    left: 0.5em;
+    font-size: 2.3em;
+  }
+  #newsflash #pr-head::after {
+    position: relative;
+    top: 3em;
+    left: -16.5em;
+    font-size: 0.4em;
+    content: "by Prime";
+  }
+  #newsflash #pr-text {
+    position: relative;
+    left: 0.7em;
+    top: 10em;
+    width: 25em;
+  }
+  #newsflash #carousel {
+    position: relative;
+    top: -20em;
+  }
+  #newsflash .arrow-wrapper {
+    position: relative;
+    left: 1em;
+    top: 17em;
+  }
+  #newsflash .arrow-wrapper::before {
+    content: "5min ago";
+    position: relative;
+    left: 1em;
+    top: -6.45em;
+  }
+}
+
 .studyBG {
   background-color: #FFFFFF;
 }
