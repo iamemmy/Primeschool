@@ -25,13 +25,23 @@ $colors:(
 }
 
 // Mixin
-@mixin portrait{
+@mixin mobile {
+    @media (max-width: 500.2px){
+        @content;
+    }
+}
+@mixin portrait {
     @media (max-width: 768.2px){
         @content;
     }
 }
-@mixin landscape{
-    @media (max-width: 992.2px){
+@mixin tablet {
+    @media (max-width: 876.2px){
+        @content;
+    }
+}
+@mixin landscape {
+    @media (max-width: 1100.2px){
         @content;
     }
 }
