@@ -87,4 +87,12 @@
   padding: 10px 25px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.img-fluid {
+  border-radius: 50%;
+}
+
+img {
+  width: 47px;
 }/*# sourceMappingURL=dashboard.css.map */

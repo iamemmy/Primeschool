@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DASHBOARD</title>
+    <title> TEACHER DASHBOARD</title>
     <link rel="stylesheet" href="styles/dashboard.css">
     <script src="https://kit.fontawesome.com/3c811181c7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../../../bootstrap/bootstrap.min.css">
+ 
 </head>
 <body>
 
@@ -38,8 +38,8 @@
                   <img src="../../media/vp-admin.png" alt="user" class="img-fluid">
                 </div>
                 <div>
-                  <h5>Miracle Richard </h5>
-                  <p>mimirichy@gmail.com</p>
+                  <h5>Gospel Richard </h5>
+                  <p>gospelrichy@gmail.com</p>
                 </div>
                </div>
             </div>
@@ -63,7 +63,7 @@
                 <li>
                   <a href="#"><i class="fa-solid fa-envelope"></i>
                     Messages
-                    <span class="badge bg-primary rounded-pill">4</span>
+                    <span class="badge bg-danger rounded-pill">4</span>
                   </a>
                 </li>
 
@@ -82,14 +82,14 @@
               </li>
 
                <li>
-                <a href="#" class="active">
+                <a href="#">
                   <i class="fa-solid fa-user-graduate"></i></i>&nbsp;
                   Student
                 </a>
               </li>
 
                <li>
-                <a href="#">
+                <a href="#" class="active">
                   <i class="fa-solid fa-users"></i>&nbsp;
                   Teachers
                 </a>
@@ -108,16 +108,22 @@
                   Settings</a>
                 </li>
 
+                <li>
+                  <a href="#">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                  </a>
+                </li>
           </ul>
+          
       </div>
           
 
         
        <div class="container student">
         <div class="row">
-          <div class="col d-flex justify-content-between align-items-center" 
+          <div class="col-md-9 d-flex flex-wrap justify-content-between align-items-center" 
                style="margin-top: 18vh; margin-left: 8vw;">
-                <h1>Student</h1>
+                <h1>Teacher</h1>
 
                   <h5 class="fitsort">
                     Sort
@@ -129,16 +135,82 @@
                     <i class="fa-solid fa-filter"></i>
                   </h5>
 
-                  <h5 class="add"> + Add</h5>
-           
+                  <h5 class="add"> + Add</h5>          
           </div>
         </div>
-       </div>        
+
+
+
+        <div class="row">
+            <div class="col-md mt-4"
+                 style="margin-left: 8vw;">
+               <table class="table table-borderless table-hover" style="cursor: pointer;">
+                <thead>
+                     <tr>
+                       <th>Name</th>
+                       <th>ID</th>
+                       <th>Dept</th>
+                       <th>Gender</th>
+                       <th>Age</th>
+                       <th>Email</th>
+                     </tr>
+                   </thead>
+                <tbody>
+                    <tr>
+                       <th><img src="../../media/principal.png" alt="user" class="img-fluid">&nbsp; John mikel</th>
+                       <th>2345</th>                     
+                       <th>Computer Science</th>
+                       <th>Male</th>
+                       <th>21</th>
+                       <th>johnmikel@gmail.com</th>
+                     </tr>
+
+                     <tr>
+                      <th><img src="../../media/vp-admin.png" alt="user" class="img-fluid">&nbsp; Rose joel</th>
+                       <th>3845</th>                     
+                       <th>Mathematics </th>
+                       <th>Female</th>
+                       <th>23</th>
+                       <th>rosejoel@gmail.com</th>
+                     </tr>
+
+                     <tr>
+                        <th><img src="../../media/unsplash_aoEwuEH7YAs.png" alt="user" class="img-fluid">&nbsp; Ezekiel Amos</th>
+                        <th>7838</th>                     
+                        <th>Biology</th>
+                        <th>Male</th>
+                        <th>19</th>
+                        <th>amosezekiel@gmail.com</th>
+                     </tr>
+
+                     <tr>
+                        <th><img src="../../media/vp-academics.png" alt="user" class="img-fluid">&nbsp; John mikel</th>
+                        <th>2345</th>                     
+                        <th>Computer Science</th>
+                        <th>Male</th>
+                        <th>21</th>
+                        <th>johnmikel@example.com</th>
+                      </tr>
+
+                      <tr>
+                        <th><img src="../../media/vp-admin.png" alt="user" class="img-fluid">&nbsp; Mary Jacob</th>
+                       <th>4445</th>                     
+                       <th>Geograhy</th>
+                       <th>Female</th>
+                       <th>24</th>
+                       <th>marynoel@gmail.com</th>
+                      </tr>
+                   </tbody>
+                 </table>
+            </div>
+        </div>
+
+</div>        
         
         
        
       
 
-        <script src="../../../../bootstrap/bootstrap.bundle.min.js"></script>
+       
 </body>
 </html>
