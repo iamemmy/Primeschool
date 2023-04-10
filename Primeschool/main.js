@@ -107,3 +107,15 @@ $(document).ready(function() {
     }
     // END OF ABOUT US NAVIGATION SCRIPT
 
+
+      // FORM Scripts
+const form = document.querySelector("form");
+form.addEventListener("submit", e => {
+    if (!form.checkValidity()){
+        e.preventDefault()
+    }
+    form.classList.add("was-validated")
+}
+)
+
+      // END of FORM Scripts

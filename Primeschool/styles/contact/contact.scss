@@ -1,0 +1,307 @@
+@import "contact-style";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;600;900&display=swap');
+
+$color1: #17171F;
+$color2: #fff;
+$color3: #17A1FA;
+$color4: linear-gradient(231.14deg, #17A1FA 9.86%, #40FFC7 82.93%);
+$color5: #512FFA;
+
+.contact{
+  padding-bottom: 3em;
+  background-color: $color1;
+  height: 100em;
+  #logo1{
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 110.5%;
+    background: $color4;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+  }
+  #logo2{
+    font-family: Arial, "lato", sans-serif;
+    position: relative;
+    top: -0.85em;
+    font-size:0.8em;
+    font-weight: 200;
+    color: rgb(233, 231, 231);
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    div{
+      position: relative;
+      top: 2em;
+      i{
+        color: $color2;
+        font-size: 1em;
+        margin-right: 2.5em;
+      }
+    }
+  }
+  #head{
+    position: relative;
+    top: 2em;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5em;
+    line-height: 110.5%;
+    background: $color4;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+  }
+  #headtext{
+    font-family: "lato", sans-serif;
+    font-weight: 200;
+    position: relative;
+    letter-spacing: 0.85px;
+    top: 14em;
+    font-size: 0.8em;
+    color: rgb(209, 203, 203);
+  }
+  #address{
+    font-family: "lato", sans-serif;
+    font-weight: 600;
+    position: relative;
+    letter-spacing: 1.2px;
+    top: 30em;
+    font-size: 1em;
+    color: $color2;
+    #h{
+      font-family: "lato", sans-serif;
+      font-weight: 200;
+      font-size: 0.8em;
+      color: rgb(209, 203, 203);
+    }
+  }
+  form{
+    outline-style: none;
+    box-shadow: none;
+    border-color: none;
+    position: relative;
+    right: -1em;
+    top: 3em;
+    padding: 4em;
+    background-color: $color2;
+    #name{
+      border: none;
+      border-bottom: 1px solid #17171F;
+      margin-bottom: 1.5em;
+      &:hover{
+        border: none;
+        border-bottom: 2px solid $color1;
+      }
+      &:focus{
+        outline-style: none;
+        box-shadow: none;
+        border-color: none;
+        border-bottom: 2px solid $color5;
+      }
+    }
+    #email{
+      border: none;
+      border-bottom: 1px solid #17171F;
+      margin-bottom: 1.5em;
+      &:hover{
+        border: none;
+        border-bottom: 2px solid $color1;
+      }
+      &:focus{
+        border-bottom: 2px solid $color5;
+        outline-style: none;
+        box-shadow: none;
+        border-color: none;
+      }
+    }
+    #mesg{
+      height: 13em;
+      border: none;
+      border-bottom: 1px solid #17171F;
+      margin-bottom: 2.5em;
+      &:hover{
+        border: none;
+        border-bottom: 2px solid $color1;
+      }
+      &:focus{
+        outline-style: none;
+        box-shadow: none;
+        border-color: none;
+        border: none;
+        border-bottom: 2px solid $color5;
+      }
+    }
+    button{
+      margin-top: 2.4em;
+      height: 4em;
+      width: 32em;
+      background-color: $color5;
+    }
+  }
+  .image-con{
+      background: $color1;
+      position: relative;
+      top: 12.5em;
+      .bg{
+        padding: 0;
+        height: 30em;
+        width: 100%;
+        z-index: 0;
+      }
+  }
+  }
+
+
+footer{
+  background-color: $color1;
+  position: relative;
+  bottom: -0rem;
+#card{
+  height: fit-content;
+  width: 100%;
+  position: relative;
+  left: -3.5em;
+  border: none;
+}
+
+#imgv{
+  height: 260px;
+  width: 320px;
+}
+
+#overlay{
+  display: flex;
+  justify-content: flex-start;
+  height: fit-content;
+  width: fit-content;
+}
+
+#c0h{
+  font-size: 1.8em;
+  position: relative;
+  left: -1.45em;
+}
+
+#c0sh1{
+  position: relative;
+  top: -1.2em;
+  left: -4em;
+  font-size: 0.65em;
+}
+
+#c0sh2{
+  position: relative;
+  left: -1.9em;
+}
+
+#textc{
+  width: 12em;
+}
+
+#c0text{
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  left: 1.7em;
+  font-size: 0.55em;
+  line-height: 1.3em;
+  width: 100%;
+  text-align: start;
+}
+
+#slinks{
+  background: none;
+  color: $color2;
+  position: relative;
+  left: -2.5em;
+}
+
+#sl{
+  text-decoration: none;
+  background: none;
+  color: $color2;
+  margin-left: 0.5em;
+}
+
+#c1{
+  font-size: 0.8em;
+  line-height: 2.2em;
+}
+
+#c1h{
+  font-size: 1.3em;
+}
+
+#c2{
+  font-size: 0.8em;
+  line-height: 2.2em;
+}
+
+#c2h{
+  font-size: 1.3em;
+}
+
+#c3{
+  font-size: 0.8em;
+  line-height: 2.2em;
+}
+
+#c3h{
+  font-size: 1.3em;
+}
+
+#c4{
+  font-size: 0.8em;
+  line-height: 2.2em;
+  form{
+    background-color: $color1;
+  }
+}
+
+#c4h{
+  font-size: 1.3em;
+}
+
+#inputE{
+  font-size: 1.1em;
+  width: 15em;
+  height: 2.9em;
+  margin-top: 1.4em;
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+  border: 4px lightcyan;
+  background-color: #eaffc4ce;
+  box-shadow: 30px 30px 80px rgba(240, 239, 220, 0.09);
+}
+
+#subB{
+  margin-bottom: 3em;
+  margin-left: 0.7em;
+  background: $color4;
+  color: $color2;
+  width: 12em;
+  height: 2.8em;
+  border-radius: 0.5em;
+  border: 1px solid lightskyblue;
+}
+
+#btmf{
+  color: $color2;
+  position: relative;
+  left: -2rem;
+  width: 101vw;
+  background-color: $color3;
+  overflow-x: hidden;
+}
+
+#ct{
+  font-size: 0.85em;
+}
+}
