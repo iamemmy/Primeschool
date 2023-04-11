@@ -1,5 +1,19 @@
+.head .primetop {
+  background: linear-gradient(210.72deg, #17A1FA -16.93%, #40FFC7 55.23%), linear-gradient(0deg, #F0F0F5, #F0F0F5);
+  width: -moz-max-content;
+  width: max-content;
+  height: 10px;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 60.5%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 .head .search-form {
   width: 80%;
+  padding-left: 4rem;
 }
 .head .search-form input {
   border: 0;
@@ -47,26 +61,25 @@
   margin: 0;
   padding: 0;
   width: 15%;
-  background-color: white;
   position: fixed;
   height: 100%;
   overflow: auto;
 }
 .sidebar ul.sidenav li a {
   display: block;
-  padding: 15px 40px;
+  padding: 11px 30px;
   text-decoration: none;
   color: black;
 }
 .sidebar ul.sidenav li a.active {
   background-color: #17A1FA;
   color: white;
-  border-radius: 50px;
+  border-radius: 15px;
 }
 .sidebar ul.sidenav li a:hover:not(.active) {
   background-color: #17A1FA;
   color: white;
-  border-radius: 50px;
+  border-radius: 15px;
 }
 .sidebar .fa-solid {
   font-size: 20px;
@@ -75,13 +88,13 @@
   color: white;
 }
 
-.student .fitsort {
+.parent .fitsort {
   background-color: gainsboro;
   padding: 10px 25px;
   border-radius: 5px;
   cursor: pointer;
 }
-.student .add {
+.parent .add {
   background-color: #17A1FA;
   color: white;
   padding: 10px 25px;
@@ -94,5 +107,5 @@
 }
 
 img {
-  width: 47px;
+  width: 40px;
 }/*# sourceMappingURL=dashboard.css.map */
