@@ -1,124 +1,149 @@
-  $temColor: #17A1FA;
-  $Wite: white;
 
 
+$temColor: #17A1FA;
+$Wite: white;
 
 
-.head{
-    //........HEADER......
-    .search-form {
-        width: 80%;
-      }
-      
-      .search-form input {
-        border: 0;
-        font-size: 14px;
-        color:$temColor;
-        font-size: 20px;
-        padding: 7px 38px 7px 40px;
-        border-radius: 6px;
-        transition: 0.3s;
-        width: 100%;
-      }
-      
-      .search-form input:focus,
-      .search-form input:hover {
-        outline: none;
-        box-shadow: none;
-        border: 1px solid $temColor;
-      }
-      
-      .search-form button {
-        border: 0;
-        padding: 0;
-        margin-left: -30px;
-        background: none;
-      }
-      
-      .search-form button i {
-        position: absolute;
-        font-size: 18px;
-        transform:translateY(-50%);
-        padding-left: 15px;
-        cursor: pointer; 
-      }
-
-      .fa-bell{
-        background-color: $temColor;
-        color: $Wite;
-        padding: 18px;
-        border-radius: 50%;
-        font-size: 20px;
-      }
-
-      .img-fluid{
-        border-radius: 50%;
-       height: 60px;
-      }  //.............END OF HEADER...........     
-    }
-
-
- 
-    // ........SIDE BAR ...............
-    .sidebar{
-
-      ul.sidenav {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 15%;
-        background-color:white;
-        position: fixed;
-        height: 100%;
-        overflow: auto;
-      }
-
-      ul.sidenav li a {
-        display: block;
-        padding: 15px 40px;
-        text-decoration: none;
-        color: black;
-      }
+       //........HEADER......
+  .head{
      
-        ul.sidenav li a.active {
-        background-color: $temColor;
-        color: $Wite;
-        border-radius: 50px;
-      }
       
-    
-      ul.sidenav li a:hover:not(.active) {
-        background-color: $temColor;
-        color: $Wite;
-        border-radius: 50px;
-      }
-
-      .fa-solid {
-        font-size: 20px;
-      }
-      .fa-solid:hover {
-        color: $Wite;
-      }
-      
+      .primetop{
+        background: linear-gradient(210.72deg, #17A1FA -16.93%, #40FFC7 55.23%),
+        linear-gradient(0deg, #F0F0F5, #F0F0F5);
+        width: max-content;
+        height: 10px; 
+        font-family: 'Raleway';
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 60.5%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
     
-
-
-        //  STUDENTS
-    .student{
-
-      .fitsort{
-        background-color: gainsboro;
-        padding: 10px 25px;
-        border-radius: 5px;
-        cursor: pointer; 
-      }
-      
-      .add{
-        background-color: $temColor;
-        color: $Wite;
-        padding: 10px 25px;
-        border-radius: 5px;
-        cursor: pointer; 
+  .search-form {
+      width: 80%;
+      padding-left: 4rem;
     }
+    
+    .search-form input {
+      border: 0;
+      font-size: 14px;
+      color:$temColor;
+      font-size: 20px;
+      padding: 7px 38px 7px 40px;
+      border-radius: 6px;
+      transition: 0.3s;
+      width: 100%;
+    }
+    
+    .search-form input:focus,
+    .search-form input:hover {
+      outline: none;
+      box-shadow: none;
+      border: 1px solid $temColor;
+    }
+    
+    .search-form button {
+      border: 0;
+      padding: 0;
+      margin-left: -30px;
+      background: none;
+    }
+    
+    .search-form button i {
+      position: absolute;
+      font-size: 18px;
+      transform:translateY(-50%);
+      padding-left: 15px;
+      cursor: pointer; 
+    }
+
+    .fa-bell{
+      background-color: $temColor;
+      color: $Wite;
+      padding: 18px;
+      border-radius: 50%;
+      font-size: 20px;
+    }
+
+    .img-fluid{
+      border-radius: 50%;
+     height: 60px;
+    }  //.............END OF HEADER...........     
   }
+
+
+
+  // ........SIDE BAR ...............
+  .sidebar{
+
+    ul.sidenav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 15%;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+
+    ul.sidenav li a {
+      display: block;
+      padding: 11px 30px;
+      text-decoration: none;
+      color: black;
+    }
+   
+      ul.sidenav li a.active {
+      background-color: $temColor;
+      color: $Wite;
+      border-radius: 15px;
+    }
+    
+  
+    ul.sidenav li a:hover:not(.active) {
+      background-color: $temColor;
+      color: $Wite;
+      border-radius: 15px;
+    }
+
+    .fa-solid {
+      font-size: 20px;
+    }
+    .fa-solid:hover {
+      color: $Wite;
+    }
+    
+  }
+  
+
+
+      // ............ PARENT...........
+  .parent{
+
+    .fitsort{
+      background-color: gainsboro;
+      padding: 10px 25px;
+      border-radius: 5px;
+      cursor: pointer; 
+    }
+    
+    .add{
+      background-color: $temColor;
+      color: $Wite;
+      padding: 10px 25px;
+      border-radius: 5px;
+      cursor: pointer; 
+  }
+  }
+
+
+.img-fluid {
+  border-radius: 50%;
+}
+
+img {
+  width: 40px;
+}

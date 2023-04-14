@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title> TEACHER DASHBOARD</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <script src="https://kit.fontawesome.com/3c811181c7.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+          <!-- ...............HEADER............. -->
+        <div class="container-fluid head">
+            <div class="row shadow-sm fixed-top p-3 bg-white">
+
+                <div class="col-md-2">           
+                    <p><span class="primetop">PRIME</span></br>ITERNATIONAL </br>SCHOOL</p>
+               </div>
+
+               <div class="col-md-6">
+                 <!-- End Search Bar -->
+                <div class="search-bar">
+                    <form class="search-form d-flex align-items-center" metdod="POST" action="#">
+                        <button type="submit" title="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                      <input type="text" name="" placeholder="Search" title="" class="bg-light">
+                    </form>
+                  </div>
+                  <!-- End Search Bar -->
+               </div>
+
+               <div class="col-md-4 d-flex flex-wrap align-items-center justify-content-evenly">
+                <div>
+                  <i class="fa-sharp fa-solid fa-bell"></i>
+                </div>
+                <div>
+                  <img src="../../media/vp-admin.png" alt="user" class="img-fluid">
+                </div>
+                <div>
+                  <h5>Rosemary Joel</h5>
+                  <p>rosemaryjoel@gmail.com</p>
+                </div>
+               </div>
+            </div>
+        </div>
+          <!-- ............END OF HEADER............. -->
+
+
+
+
+   <!-- .......DASHBOARD CONTAINER -->
+<div class="container-fluid">
+  <div class="row"  style="margin-top: 22vh;">
+    <div class="col-md-2">
+                
+                <!-- ..........SIDE BAR.............. -->
+      <div class="sidebar">
+
+          <ul class="sidenav shadow-sm">
+
+               <li>
+                <a href="#">Dashboard</a>
+              </li>
+
+                <li>
+                  <a href="#"><i class="fa-solid fa-envelope"></i> &nbsp; Messages
+                    <span class="badge bg-danger rounded-pill">4</span>
+                  </a>
+                </li>
+
+               <li>
+                <a href="#">
+                  <i class="fa-solid fa-calendar"></i>&nbsp; Calender
+                </a>
+              </li>
+
+               <li>
+                <a href="#">
+                  <i class="fa-solid fa-laptop"></i>&nbsp; Attendance
+                </a>
+              </li>
+
+               <li>
+                <a href="#">
+                  <i class="fa-solid fa-user-graduate"></i></i>&nbsp; Student
+                </a>
+              </li>
+
+               <li>
+                <a href="#" class="active">
+                  <i class="fa-solid fa-users"></i>&nbsp; Teachers
+                </a>
+              </li>
+
+               <li>
+                <a href="#">
+                  <i class="fa-solid fa-gear"></i>&nbsp; Parents
+              </a>
+            </li>
+
+               <li>
+                <a href="#">
+                  <i class="fa-solid fa-gear"></i>&nbsp; Settings
+                </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp; Log Out
+                  </a>
+                </li>
+          </ul>
+          
+      </div>
+  </div>
+          
+            <!-- ......PARENT ....... -->
+  <div class="col-md-8" style="margin-top: 4vh;">
+
+          <div class="parent d-flex flex-wrap justify-content-between align-items-center">
+                <h1>Teacher</h1>
+
+                  <h5 class="fitsort">Sort
+                    <i class="fa-solid fa-arrow-down-wide-short"></i>
+                  </h5>
+
+                  <h5 class="fitsort">Filter 
+                    <i class="fa-solid fa-filter"></i>
+                  </h5>
+
+                  <h5 class="add"> + Add</h5>          
+          </div>
+       
+
+        
+               <table class="table table-borderless table-hover mt-4" 
+                          style="cursor: pointer; font-weight: bold;">
+                <thead>
+                     <tr>
+                       <th>Name</th>
+                       <th>ID</td>
+                       <th>Department</th>
+                       <th>Gender</th>
+                       <th>Age</th>
+                       <th>Email</th>
+                     </tr>
+                   </tdead>
+
+                <tbody>
+                    <tr>
+                       <td><img src="../../media/principal.png" alt="user" class="img-fluid">&nbsp; John mikel</td>
+                       <td>2345</td>                     
+                       <td>Computer Science</td>
+                       <td>Male</td>
+                       <td>21</td>
+                       <td>johnmikel@gmail.com</td>
+                     </tr>
+
+                     <tr>
+                      <td><img src="../../media/vp-admin.png" alt="user" class="img-fluid">&nbsp; Rosemary joel</td>
+                       <td>3845</td>                     
+                       <td>Mathematics </td>
+                       <td>Female</td>
+                       <td>23</td>
+                       <td>rosejoel@gmail.com</td>
+                     </tr>
+
+                     <tr>
+                        <td><img src="../../media/unsplash_aoEwuEH7YAs.png" alt="user" class="img-fluid">&nbsp; Ezekiel Amos</td>
+                        <td>7838</td>                     
+                        <td>Biology</td>
+                        <td>Male</td>
+                        <td>19</td>
+                        <td>amosezekiel@gmail.com</td>
+                     </tr>
+
+                     <tr>
+                        <td><img src="../../media/vp-academics.png" alt="user" class="img-fluid">&nbsp; John mikel</td>
+                        <td>2345</td>                     
+                        <td>Computer Science</td>
+                        <td>Male</td>
+                        <td>21</td>
+                        <td>johnmikel@example.com</td>
+                      </tr>
+
+                      <tr>
+                        <td><img src="../../media/vp-admin.png" alt="user" class="img-fluid">&nbsp; Mary Jacob</td>
+                       <td>4445</td>                     
+                       <td>Geograhy</td>
+                       <td>Female</td>
+                       <td>24</td>
+                       <td>marynoel@gmail.com</td>
+                      </tr>
+                   </tbody>
+                 </table>
+            </div>        
+  
+        
+            <!-- ...........RIGHT BAR......... -->
+        <div class="col-md-2 shadow-sm p-2">
+          <div class="text-center">
+            <p>2345</p>
+            <img src="../../media/vp-academics.png" alt="user" class="img-fluid" style="width: 70px;">            
+            <h4>John mikel</h4>
+            <p>Computer Science</p>
+          </div>
+
+          <div>
+              <p>About</p>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat,</p>
+          </div>
+
+           <div class="d-flex flex-wrap justify-content-between align-items-center">
+
+             <div>
+               <p>Age </br>
+                  21</br>
+                  Date Of Birth</br>
+                  4th july 2002</p>
+              </div>
+              
+              <div>
+                <p>Gender</br>
+                   Male</br>
+                   Address</br>
+                   Lokoja</p>
+              </div>
+          </div>
+
+          <h5>Other Teachers</h5>
+          <div class="text-center"> 
+            <a href="#">          
+            <img src="../../media/vp-academics.png" alt="Teachers" class="img-fluid">
+            </a>
+
+            <a href="#">   
+            <img src="../../media/vp-admin.png" alt="Teachers" class="img-fluid" style="margin-left: -10px;">
+            </a>
+
+            <a href="#">   
+            <img src="../../media/vp-academics.png" alt="Teachers" class="img-fluid" style="margin-left: -10px;">
+            </a>
+
+            <a href="#">   
+            <img src="../../media/unsplash_aoEwuEH7YAs.png" alt="Teachers" class="img-fluid" style="margin-left: -10px;">
+             </a>
+
+             <a href="#">   
+              <img src="../../media/vp-admin.png" alt="Teachers" class="img-fluid" style="margin-left: -10px;">
+              </a>
+          </div>            
+       </div>
+
+   </div>
+</div>
+        
+       
+      
+
+     
+</body>
+</html>
