@@ -345,6 +345,39 @@
   color: #FFFFFF;
   text-align: center;
 }
+#staff-area .staff-area-sub .glider-wrap .card-staff {
+  padding: 10px;
+}
+#staff-area .staff-area-sub .glider-wrap .card-staff .card-text {
+  color: #FFFFFF;
+  padding: 18px 4px 4px 4px;
+}
+#staff-area .staff-area-sub .glider-wrap .card-staff .card-text h3 {
+  font-size: 30px;
+}
+@media (max-width: 500.2px) {
+  #staff-area .staff-area-sub .glider-wrap .card-staff .card-text h3 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 876.2px) {
+  #staff-area .staff-area-sub .glider-wrap .card-staff .card-text h3 {
+    font-size: 27px;
+  }
+}
+#staff-area .staff-area-sub .glider-wrap .card-staff .card-text p {
+  font-size: 18px;
+}
+@media (max-width: 500.2px) {
+  #staff-area .staff-area-sub .glider-wrap .card-staff .card-text p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 876.2px) {
+  #staff-area .staff-area-sub .glider-wrap .card-staff .card-text p {
+    font-size: 16px;
+  }
+}
 #staff-area .staff-area-sub .card-view-all {
   -webkit-text-decoration: underline #17A1FA;
           text-decoration: underline #17A1FA;
@@ -353,6 +386,11 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   cursor: pointer;
+  padding-left: 10px;
+}
+
+#testimonial-area {
+  padding-bottom: 100px !important;
 }
 
 #testimonial-area .heading .dot {
