@@ -112,7 +112,7 @@ $color6: #F5F6F7;
   .sidenav {
     list-style: none;
     position: relative;
-    top: 3em;
+    top: 2.2em;
 
     li {
       margin-bottom: 1.5em;
@@ -173,9 +173,14 @@ $color6: #F5F6F7;
 
     #logout {
       position: relative;
-      top: 9.5em;
+      top: 8.2em;
       text-decoration: none;
       color: $color1;
+      &:active {
+      background: red;
+      color: $color2;
+      padding-left: 1em;
+    }
     }
   }
 }
