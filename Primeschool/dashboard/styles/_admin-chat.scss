@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;600;900&display=swap');
+
+$color1: #17171F;
+$color2: #fff;
+$color3: #17A1FA;
+$color4: linear-gradient(231.14deg, #17A1FA 9.86%, #40FFC7 82.93%);
+$color5: #512FFA;
+$color6: #F5F6F7;
+
+#rowtop {
+  width: fit-content;
+
+  header {
+    position: relative;
+    top: 0.75em;
+
+    #logo1 {
+      position: relative;
+      top: -0.6em;
+      left: -0.25em;
+      font-size: 1.9em;
+      font-weight: 500;
+      background: $color4;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-emphasis-color: transparent;
+    }
+
+    #logo2 {
+      position: relative;
+      top: -2.77em;
+      left: -0.8em;
+      font-size: 0.7em;
+      color: $color3;
+
+      #subl {
+        position: relative;
+        left: -1.87em;
+      }
+    }
+  }
+}
+
+.search-bar {
+  position: relative;
+  left: -0.5em;
+  top: 0.92em;
+
+  form {
+    button {
+      border: none;
+      position: relative;
+      top: 0.3em;
+      left: 2em;
+    }
+
+    input {
+      background-color: #F5F6F7;
+      border: 1px solid #F5F6F7;
+      border-radius: 0.5em;
+      margin-top: 0.35em;
+      padding-left: 2.7em;
+      height: 2.5em;
+      width: 41.5em;
+    }
+  }
+}
+
+#user {
+  margin-right: -13em;
+  position: relative;
+  top: -0.09em;
+  left: -2.9em;
+
+  i {
+    border-radius: 5em;
+    color: $color2;
+    background-color: $color5;
+    font-size: 1em;
+    padding: 0.5em;
+    position: relative;
+    top: -0.5em;
+    left: 4.35em;
+  }
+
+  img {
+    width: 2.35em;
+    position: relative;
+    top: -0.5em;
+    left: 2.5em;
+  }
+
+  h5 {
+    font-size: 0.99em;
+    letter-spacing: 0.10em;
+  }
+
+  p {
+    margin-top: -0.7em;
+    font-size: 0.73em;
+    letter-spacing: 0.10em;
+  }
+}
+
+#row2 {
+  position: relative;
+  top: 5em;
+}
+
+.sidebar {
+  .sidenav {
+    list-style: none;
+    position: relative;
+    top: 1.85em;
+
+    li {
+      margin-bottom: 1.5em;
+      height: 2.5m;
+      width: 100%;
+      border-radius: 1em;
+
+      &:active {
+        color: $color2;
+        padding-left: 1em;
+        border-radius: 0.65em;
+        width: 100%;
+        background: $color5;
+      }
+    }
+  }
+
+  a {
+    padding-top: 0.45em;
+    height: 2.5em;
+    padding-left: 1em;
+    border-radius: 0.65em;
+    display: block;
+    text-decoration: none;
+    color: $color1;
+
+    &:active {
+      color: $color2;
+    }
+
+    span.active {
+      background: red;
+    }
+  }
+
+  a.active {
+    color: $color2;
+    border-radius: 0.65em;
+    height: 2.5em;
+    width: 100%;
+    background: $color5;
+  }
+
+  #logout {
+    position: relative;
+    top: 6.35em;
+    text-decoration: none;
+    color: $color1;
+
+    &:active {
+      background: red;
+      color: $color2;
+      padding-left: 1em;
+    }
+  }
+}
+
+
+#chatsection {
+  border-radius: 0em;
+  padding: 3em;
+  padding-top: 1.7em;
+
+  #head {
+    position: relative;
+    top: -0.25em;
+    left: -0.85em;
+  }
+
+  #chatleft {
+    a {
+      margin-bottom: -1.5em;
+
+      #contname {
+        position: relative;
+        left: 0.55em;
+      }
+
+      .msgtime {
+        position: relative;
+        top: -2.55em;
+        left: 12.85em;
+      }
+
+      #pill {
+        position: relative;
+        top: -3.7em;
+        left: 17.25em;
+      }
+
+      .contmsg {
+        position: relative;
+        top: -2.35em;
+        left: 0.6em;
+      }
+    }
+  }
+
+
+  #chatright {
+    position: relative;
+    top: -7.55em;
+    right: 1em;
+
+    #topctrow {
+      margin-bottom: 1em;
+
+      #userimg {
+        position: relative;
+        top: 3.5em;
+        left: 1em;
+      }
+
+      #username {
+        position: relative;
+        top: 1.5em;
+        left: 4.7em;
+      }
+
+      #topctIcons {
+        button {
+          border: none;
+          background: none;
+          position: relative;
+          left: 32em;
+        }
+      }
+    }
+
+    #chatbox {
+      background: #E5E5E5;
+      border-top: 2.5px solid rgba(0, 0, 0, 0.2);
+
+      #leftmsg {
+        position: relative;
+        left: 0.8em;
+        background: none;
+        margin-bottom: 3em;
+
+        .ctbox1 {
+          position: relative;
+          left: 0.5em;
+          top: 2.5em;
+          z-index: 3;
+          background: #3B3B3B;
+          height: 7em;
+          width: 20em;
+          border-radius: 0.5em;
+          box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+        }
+      }
+
+      #rightmsg {
+        background: none;
+
+        .ctbox2 {
+          position: relative;
+          right: 0.5em;
+          top: 2.5em;
+          z-index: 3;
+          background: $color2;
+          height: 7em;
+          width: 20em;
+          border-radius: 0.5em;
+          box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+        }
+      }
+
+      .input-group {
+        position: relative;
+        left: 3em;
+        margin-top: 4.5em;
+        margin-bottom: 1em;
+
+        #ctinput {
+          z-index: 3;
+          position: relative;
+          left: 0.35em;
+          height: 4.2em;
+          background: $color2;
+          color: $color1;
+          border-radius: 1.1em;
+          box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+          border-bottom: 2.5px solid rgba(0, 0, 0, 0.2);
+        }
+
+        #inpIcons {
+          width: 4em;
+          z-index: 3;
+          position: relative;
+          top: 0.15em;
+          left: -5.5em;
+          display: flex;
+          justify-content: space-between;
+
+          button {
+            border: none;
+            background: none;
+          }
+
+          i {
+            font-size: 1.3em;
+            border: none;
+          }
+        }
+
+        #micIcon {
+          z-index: 3;
+          position: relative;
+          top: 0.35em;
+          left: -2.5em;
+
+          button {
+            width: 3.5em;
+            height: 3.5em;
+            border: none;
+            border-radius: 1.85em;
+            background: $color5;
+            box-shadow: 10 15px 30px 0 rgba(0, 0, 0, 0.2);
+          }
+
+          i {
+            color: $color2;
+            font-size: 1.3em;
+            border: none;
+
+          }
+        }
+      }
+    }
+  }
+
+  .chat-online {
+    color: #34ce57
+  }
+
+  .chat-offline {
+    color: #e4606d
+  }
+
+  .chat-messages {
+    display: flex;
+    flex-direction: column;
+    max-height: 800px;
+  }
+
+  .chat-message-left,
+  .chat-message-right {
+    display: flex;
+    flex-shrink: 0
+  }
+
+  .chat-message-left {
+    margin-right: auto
+  }
+
+  .chat-message-right {
+    flex-direction: row-reverse;
+    margin-left: auto
+  }
+
+
+  .flex-grow-0 {
+    flex-grow: 0;
+  }
+
+  .border-top {
+    border-top: 1px solid #dee2e6;
+  }
+}
