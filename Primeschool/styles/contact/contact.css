@@ -89,7 +89,7 @@
 }
 .contact form #name {
   border: none;
-  border-bottom: 1px solid #17171F;
+  border-bottom: 1px solid #17171f;
   margin-bottom: 1.5em;
 }
 .contact form #name:hover {
@@ -104,7 +104,7 @@
 }
 .contact form #email {
   border: none;
-  border-bottom: 1px solid #17171F;
+  border-bottom: 1px solid #17171f;
   margin-bottom: 1.5em;
 }
 .contact form #email:hover {
@@ -120,7 +120,7 @@
 .contact form #mesg {
   height: 13em;
   border: none;
-  border-bottom: 1px solid #17171F;
+  border-bottom: 1px solid #17171f;
   margin-bottom: 2.5em;
 }
 .contact form #mesg:hover {
@@ -137,7 +137,7 @@
 .contact form button {
   margin-top: 2.4em;
   height: 4em;
-  width: 32em;
+  width: 27em;
   background-color: #512FFA;
 }
 .contact .image-con {
@@ -151,6 +151,89 @@
   width: 100%;
   z-index: 0;
 }
+.contact .image-con .bgs {
+  visibility: hidden;
+}
+@media (max-width: 1024px) {
+  .contact form button {
+    position: relative;
+    left: 1em;
+    width: 18em;
+  }
+}
+@media (max-width: 769px) {
+  .contact {
+    padding-bottom: -40em;
+  }
+  .contact #head {
+    top: 0.5em;
+    font-size: 5.5em;
+  }
+  .contact #headtext {
+    letter-spacing: 0.85px;
+    top: 3em;
+    font-size: 1.2em;
+  }
+  .contact #address {
+    left: 10em;
+    top: 55em;
+  }
+  .contact #address #h {
+    font-size: 1em;
+  }
+  .contact form {
+    top: -1em;
+    left: -0.1em;
+  }
+  .contact form button {
+    width: 17em;
+    position: relative;
+    left: -1.3em;
+  }
+  .contact .image-con .bg {
+    display: none;
+  }
+  .contact .image-con .bgs {
+    z-index: 1;
+    position: relative;
+    visibility: visible;
+  }
+}
+@media (max-width: 380px) {
+  .contact {
+    padding-bottom: -40em;
+  }
+  .contact #head {
+    top: 0.5em;
+    font-size: 3.5em;
+  }
+  .contact #headtext {
+    top: 5em;
+  }
+  .contact #address {
+    top: 55em;
+  }
+  .contact #address #h {
+    font-size: 1em;
+  }
+  .contact form {
+    top: -1em;
+    left: -0.1em;
+  }
+  .contact form button {
+    width: 17em;
+    position: relative;
+    left: -1.3em;
+  }
+  .contact .image-con .bg {
+    display: none;
+  }
+  .contact .image-con .bgs {
+    z-index: 1;
+    position: relative;
+    visibility: visible;
+  }
+}
 
 footer {
   background-color: #17171F;
@@ -158,6 +241,7 @@ footer {
   bottom: 0rem;
 }
 footer #card {
+  background-color: #17171F;
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
@@ -181,16 +265,18 @@ footer #c0h {
   font-size: 1.8em;
   position: relative;
   left: -1.45em;
+  top: -0.1em;
 }
 footer #c0sh1 {
   position: relative;
-  top: -1.2em;
+  top: -1.73em;
   left: -4em;
   font-size: 0.65em;
 }
 footer #c0sh2 {
   position: relative;
-  left: -1.9em;
+  left: -1.99em;
+  top: -0.38em;
 }
 footer #textc {
   width: 12em;
@@ -200,6 +286,7 @@ footer #c0text {
   justify-content: flex-start;
   position: relative;
   left: 1.7em;
+  top: -1em;
   font-size: 0.55em;
   line-height: 1.3em;
   width: 100%;
@@ -211,7 +298,7 @@ footer #slinks {
   position: relative;
   left: -2.5em;
 }
-footer #sl {
+footer #slinks #sl {
   text-decoration: none;
   background: none;
   color: #fff;
@@ -256,7 +343,7 @@ footer #inputE {
   margin-bottom: 1.5em;
   padding-bottom: 1em;
   border: 4px lightcyan;
-  background-color: rgba(234, 255, 196, 0.8078431373);
+  background-color: rgba(244, 252, 230, 0.8078431373);
   box-shadow: 30px 30px 80px rgba(240, 239, 220, 0.09);
 }
 footer #subB {
@@ -272,11 +359,173 @@ footer #subB {
 footer #btmf {
   color: #fff;
   position: relative;
+  height: 2.35em;
   left: -2rem;
   width: 101vw;
   background-color: #17A1FA;
   overflow-x: hidden;
 }
 footer #ct {
+  margin-top: -0.5em;
+  padding: 0;
+  overflow: hidden;
   font-size: 0.85em;
+}
+@media (max-width: 1024px) {
+  footer #c0sh1 {
+    top: -1.5em;
+  }
+  footer #inputE {
+    width: 11em;
+  }
+  footer #subB {
+    position: relative;
+    left: -0.6em;
+    width: 9em;
+  }
+  footer #btmf {
+    left: -0.7em;
+  }
+}
+@media (max-width: 1024px) {
+  footer #imgv {
+    position: relative;
+    top: 0.5em;
+  }
+  footer #slinks {
+    top: 0em;
+    left: -2em;
+    width: 11em;
+  }
+  footer #c1 {
+    position: relative;
+    left: 7em;
+  }
+  footer #c2 {
+    position: relative;
+    left: 5.5em;
+  }
+  footer #c3 {
+    position: relative;
+    left: 5.5em;
+  }
+  footer #c4 {
+    position: relative;
+    left: 1em;
+  }
+}
+@media (max-width: 769px) {
+  footer {
+    height: 49em;
+  }
+  footer #imgv {
+    visibility: hidden;
+  }
+  footer #c0h {
+    visibility: hidden;
+  }
+  footer #c0sh1 {
+    visibility: hidden;
+  }
+  footer #c0text {
+    color: #fff;
+    top: -2em;
+    left: 7.5em;
+    width: 20em;
+    font-size: 0.95em;
+  }
+  footer #slinks {
+    top: -1em;
+    left: 0.3em;
+    width: 40em;
+  }
+  footer #slinks #sl {
+    margin-left: 2.7em;
+    font-size: 2.5em;
+  }
+  footer #c1 {
+    position: relative;
+    top: 2em;
+    left: 29.3em;
+  }
+  footer #c2 {
+    position: relative;
+    top: 22em;
+    left: -17em;
+  }
+  footer #c3 {
+    position: relative;
+    top: 22em;
+    left: 5em;
+  }
+  footer #c4 {
+    position: relative;
+    left: -41em;
+    top: 40em;
+  }
+  footer #c4 #c4h {
+    width: 11em;
+  }
+  footer #c4 #inputE {
+    width: 23em;
+  }
+  footer #subB {
+    width: 12em;
+    position: relative;
+    left: -0.7em;
+  }
+  footer #btmf {
+    visibility: hidden;
+  }
+}
+@media (max-width: 380px) {
+  footer {
+    height: 67em;
+  }
+  footer #c0text {
+    color: #fff;
+    top: -8em;
+    left: 3.8em;
+    width: 20em;
+    font-size: 0.95em;
+  }
+  footer #slinks {
+    top: -3em;
+    left: 0.3em;
+    width: 22em;
+  }
+  footer #slinks #sl {
+    margin-left: 1em;
+    font-size: 2.5em;
+  }
+  footer #c1 {
+    left: -9em;
+  }
+  footer #c2 {
+    width: 14em;
+    margin-right: -20em;
+    top: 0.2em;
+    left: -20em;
+  }
+  footer #c3 {
+    position: relative;
+    top: 3em;
+    left: -8em;
+  }
+  footer #c4 {
+    position: relative;
+    top: 7em;
+    left: 0em;
+  }
+  footer #c4 #c4h {
+    position: relative;
+    left: -6em;
+  }
+  footer #c4 #inputE {
+    width: 23em;
+  }
+  footer #c4 #subB {
+    width: 13em;
+    left: -7.7em;
+  }
 }/*# sourceMappingURL=contact.css.map */

@@ -392,7 +392,6 @@
 #testimonial-area {
   padding-bottom: 100px !important;
 }
-
 #testimonial-area .heading .dot {
   position: relative;
 }
@@ -485,10 +484,12 @@
 }
 
 footer {
+  background-color: #17171F;
   position: relative;
   bottom: 0rem;
 }
 footer #card {
+  background-color: #17171F;
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
@@ -512,16 +513,18 @@ footer #c0h {
   font-size: 1.8em;
   position: relative;
   left: -1.45em;
+  top: -0.1em;
 }
 footer #c0sh1 {
   position: relative;
-  top: -1.2em;
+  top: -1.73em;
   left: -4em;
   font-size: 0.65em;
 }
 footer #c0sh2 {
   position: relative;
-  left: -1.9em;
+  left: -1.99em;
+  top: -0.38em;
 }
 footer #textc {
   width: 12em;
@@ -531,6 +534,7 @@ footer #c0text {
   justify-content: flex-start;
   position: relative;
   left: 1.7em;
+  top: -1em;
   font-size: 0.55em;
   line-height: 1.3em;
   width: 100%;
@@ -542,7 +546,7 @@ footer #slinks {
   position: relative;
   left: -2.5em;
 }
-footer #sl {
+footer #slinks #sl {
   text-decoration: none;
   background: none;
   color: #fff;
@@ -584,7 +588,7 @@ footer #inputE {
   margin-bottom: 1.5em;
   padding-bottom: 1em;
   border: 4px lightcyan;
-  background-color: rgba(234, 255, 196, 0.8078431373);
+  background-color: rgba(244, 252, 230, 0.8078431373);
   box-shadow: 30px 30px 80px rgba(240, 239, 220, 0.09);
 }
 footer #subB {
@@ -600,117 +604,179 @@ footer #subB {
 footer #btmf {
   color: #fff;
   position: relative;
+  height: 2.35em;
   left: -2rem;
   width: 101vw;
   background-color: #17A1FA;
   overflow-x: hidden;
 }
 footer #ct {
+  margin-top: -0.5em;
+  padding: 0;
+  overflow: hidden;
   font-size: 0.85em;
 }
-@media (max-width: 1334px) {
-  footer #c1 {
-    margin-left: 3em;
+@media (max-width: 1024px) {
+  footer #c0sh1 {
+    top: -1.5em;
+  }
+  footer #inputE {
+    width: 11em;
+  }
+  footer #subB {
+    position: relative;
+    left: -0.6em;
+    width: 9em;
   }
   footer #btmf {
-    width: 104vw;
+    left: -0.7em;
   }
 }
-@media (max-width: 1280px) {
-  footer #c1 {
-    margin-left: 5em;
+@media (max-width: 1024px) {
+  footer #card {
+    background: none;
   }
-  footer #btmf {
-    width: 106vw;
-  }
-}
-@media (max-width: 1050px) {
-  footer #c1 {
-    margin-left: 7em;
-  }
-  footer #btmf {
-    width: 108vw;
-  }
-}
-@media (max-width: 950px) {
-  footer #c1 {
-    margin-left: 9em;
-  }
-  footer #btmf {
-    width: 110vw;
-  }
-}
-@media (max-width: 905px) {
-  footer #btmf {
-    width: 112vw;
-  }
-}
-@media (max-width: 850px) {
-  footer #c1 {
-    margin-left: 11em;
-  }
-  footer #btmf {
-    width: 114vw;
-  }
-}
-@media (max-width: 769px) {
   footer #imgv {
-    opacity: 0;
-    border: none;
+    position: relative;
+    top: 0.5em;
+  }
+  footer #slinks {
+    top: 0em;
+    left: -2em;
+    width: 11em;
   }
   footer #c1 {
     position: relative;
-    left: 0;
+    left: 7em;
   }
-  footer #c1::before {
-    content: "";
+  footer #c2 {
+    position: relative;
+    left: 5.5em;
+  }
+  footer #c3 {
+    position: relative;
+    left: 5.5em;
+  }
+  footer #c4 {
+    position: relative;
+    left: 1em;
+  }
+}
+@media (max-width: 769px) {
+  footer {
+    height: 49em;
+  }
+  footer #card {
+    background: none;
+  }
+  footer #imgv {
+    visibility: hidden;
+  }
+  footer #c0h {
+    visibility: hidden;
+  }
+  footer #c0sh1 {
+    visibility: hidden;
+  }
+  footer #c0text {
+    color: #fff;
+    top: -2em;
+    left: 7.5em;
+    width: 20em;
+    font-size: 0.95em;
+  }
+  footer #slinks {
+    top: -1em;
+    left: 0.3em;
+    width: 40em;
+  }
+  footer #slinks #sl {
+    margin-left: 2.7em;
+    font-size: 2.5em;
+  }
+  footer #c1 {
+    position: relative;
+    top: 2em;
+    left: 29.3em;
+  }
+  footer #c2 {
+    position: relative;
+    top: 22em;
+    left: -17em;
+  }
+  footer #c3 {
+    position: relative;
+    top: 22em;
+    left: 5em;
+  }
+  footer #c4 {
+    position: relative;
+    left: -41em;
+    top: 40em;
+  }
+  footer #c4 #c4h {
+    width: 11em;
+  }
+  footer #c4 #inputE {
+    width: 23em;
+  }
+  footer #subB {
+    width: 12em;
+    position: relative;
+    left: -0.7em;
   }
   footer #btmf {
     visibility: hidden;
   }
-  footer #c3 {
-    position: relative;
-    left: -3.5em;
-  }
-  footer #c4 {
-    position: relative;
-    left: 14em;
-  }
-  footer #c4 #inputE {
-    background-color: rgba(224, 222, 222, 0.9176470588);
-    width: 24em;
-  }
 }
 @media (max-width: 380px) {
-  footer #c1 {
-    position: relative;
-    left: -13em;
+  footer {
+    height: 67em;
   }
-  footer #c1::before {
-    content: ".c";
+  footer #c0text {
+    color: #fff;
+    top: -8em;
+    left: 3.8em;
+    width: 20em;
+    font-size: 0.95em;
+  }
+  footer #slinks {
+    top: -3em;
+    left: 0.3em;
+    width: 22em;
+  }
+  footer #slinks #sl {
+    margin-left: 1em;
+    font-size: 2.5em;
+  }
+  footer #c1 {
+    left: -9em;
   }
   footer #c2 {
-    position: relative;
-    top: -15.7em;
-    left: 6em;
+    width: 14em;
+    margin-right: -20em;
+    top: 2em;
+    left: -20em;
   }
   footer #c3 {
     position: relative;
-    top: -9em;
-    left: -7em;
+    top: 3em;
+    left: -8em;
   }
   footer #c4 {
     position: relative;
-    left: -6em;
-    top: -9em;
+    top: 7em;
+    left: 0em;
+  }
+  footer #c4 #c4h {
+    position: relative;
+    left: -1em;
   }
   footer #c4 #inputE {
-    position: relative;
-    left: 7.5em;
-    background-color: rgba(224, 222, 222, 0.9176470588);
-    width: 24em;
+    width: 23em;
   }
-  footer #btmf {
-    width: 0vw;
+  footer #c4 #subB {
+    width: 13em;
+    left: -7.7em;
   }
 }/*# sourceMappingURL=about.css.map */
