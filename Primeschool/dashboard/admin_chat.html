@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DASHBOARD</title>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css' rel='stylesheet' />
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.print.min.css' rel='stylesheet'
+    media='print' />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+
+<body>
+  <section id="teachcal">
+    <div class="container-fluid">
+      <!-- ...............HEADER............. -->
+      <div class="row" id="rowtop">
+        <div class="col-md-12">
+          <div class="row fixed-top p-0">
+            <div class="col-md-2 text-center">
+              <header>
+                <h1 class="fw bold mt-3" id="logo1">PRIME</h1>
+                <h3 class="fw bold mt-0" id="logo2">INTERNATIONAL <br><span id="subl">SCHOOL</span></h3>
+              </header>
+            </div>
+
+            <div class="col-lg-6">
+              <!--Search Bar -->
+              <div class="search-bar">
+                <form class="search-form d-flex align-items-center" method="POST" action="#">
+                  <button type="submit" title="Search"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                  <input type="text" name="" placeholder="Search" title="">
+                </form>
+              </div>
+              <!-- End Search Bar -->
+            </div>
+
+            <div class="col-lg-4 d-flex align-items-center justify-content-evenly" id="user">
+              <div>
+                <i class="fa-sharp fa-regular fa-bell"></i>
+              </div>
+              <div>
+                <img src="media/mira.png" alt="user" class="img-fluid">
+              </div>
+              <div>
+                <h5>Davison Miracle</h5>
+                <p>davisonmiracle@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ............END OF HEADER............. -->
+
+      <div class="row row-cols-12 d-flex justify-content-start" id="row2">
+        <!-- ..........SIDE BAR.............. -->
+        <div class="col-md-2">
+          <div class="sidebar">
+            <ul class="sidenav shadow-sm">
+
+              <li><a href="#">
+                  <i class="fa-solid fa-border-all"></i>
+                  Dashboard</a>
+              </li>
+              </a>
+
+              <li>
+                <a href="#" class="active">
+                  <i class="fa-solid fa-envelope"></i>
+                  Messages
+                  <span class="active" class="badge bg-primary squared-pill">4</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-regular fa-calendar"></i>
+                  Calendar
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-school"></i>
+                  Attendance
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-user-graduate"></i>
+                  Students
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-person-chalkboard"></i>
+                  Teachers
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-people-pulling"></i>
+                  Parents</a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-regular fa-gear"></i>
+                  Settings</a>
+              </li>
+
+              <a href="#" id="logout">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Log out</a>
+
+            </ul>
+
+          </div>
+        </div>
+
+        <!---Chat Box-->
+        <div class="col-md-10">
+          <main class="content">
+            <div class="container p-0">
+              <div class="card" id="chatsection">
+                <div class="row g-0">
+                  <h1 class="h3 mb-3" id="head">Messages</h1>
+                  <div class="col-md-5" id="chatleft">
+                    <a href="#" class="list-group-item list-group-item-action border-0">
+                      <div class="d-flex align-items-start">
+                        <img src="media/ann.png" class="rounded-circle mr-1" alt="Mira" width="48" height="53">
+                        <div class="flex-grow-1 ml-3">
+                          <p id="contname">Ann</p>
+                          <div class="msgtime">15m</div>
+                          <div class="contmsg">
+                            <p>Chee how are you doing</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action border-0">
+                      <div class="d-flex align-items-start">
+                        <img src="media/favy.png" class="rounded-circle mr-1" alt="Mira" width="48" height="53">
+                        <div class="flex-grow-1 ml-3">
+                          <p id="contname">Favy</p>
+                          <div class="msgtime">27m</div>
+                          <div class="contmsg">
+                            <p>Chee how are you doing</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action border-0">
+                      <div class="d-flex align-items-start">
+                        <img src="media/amara.png" class="rounded-circle mr-1" alt="Mira" width="48" height="53">
+                        <div class="flex-grow-1 ml-3">
+                          <p id="contname">Amara</p>
+                          <div class="msgtime">1hr</div>
+                          <span id="pill" class="badge bg-danger squared-pill">4</span>
+                          <div class="contmsg">
+                            <p>Chee how are you doing</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action border-0">
+                      <div class="d-flex align-items-start">
+                        <img src="media/john.png" class="rounded-circle mr-1" alt="Mira" width="48" height="53">
+                        <div class="flex-grow-1 ml-3">
+                          <p id="contname">John</p>
+                          <div class="msgtime">3hr</div>
+                          <div class="contmsg">
+                            <p>Chee how are you doing</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action border-0">
+                      <div class="d-flex align-items-start">
+                        <img src="media/sarah.png" class="rounded-circle mr-1" alt="Mira" width="48" height="53">
+                        <div class="flex-grow-1 ml-3">
+                          <p id="contname">Sarah</p>
+                          <div class="msgtime">2d</div>
+                          <span id="pill" class="badge bg-danger squared-pill">4</span>
+                          <div class="contmsg">
+                            <p>Chee how are you doing</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action border-0">
+                      <div class="d-flex align-items-start">
+                        <img src="media/david.png" class="rounded-circle mr-1" alt="Mira" width="48" height="53">
+                        <div class="flex-grow-1 ml-3">
+                          <p id="contname">David</p>
+                          <div class="msgtime">1w</div>
+                          <div class="contmsg">
+                            <p>Chee how are you doing</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action border-0">
+                      <div class="d-flex align-items-start">
+                        <img src="media/presh.png" class="rounded-circle mr-1" alt="Mira" width="48" height="53">
+                        <div class="flex-grow-1 ml-3">
+                          <p id="contname">Presh</p>
+                          <div class="msgtime">5d</div>
+                          <div class="contmsg">
+                            <p>Chee how are you doing</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-7" id="chatright">
+                    <div class="d-flex align-items-center py-1">
+                      <div class="position-relative" id="topctrow">
+                        <img src="media/mira.png" class="rounded-circle mr-1" alt="Mira" width="48" height="53"
+                          id="userimg">
+                        <div class="flex-grow-1" id="username">
+                          <strong>Mira</strong>
+                        </div>
+                        <div id="topctIcons">
+                          <button><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                          <button><i class="fa-sharp fa-solid fa-phone"></i></button>
+                          <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="chatbox">
+                      <div class="position-relative" id="d">
+                        <div class="chat-messages p-4">
+                          <div class="chat-message-left pb-4" id="leftmsg">
+                            <div>
+                              <img src="media/mira.png" class="rounded-circle mr-1" alt="Mira" width="40" height="40">
+                            </div>
+                            <div class="ctbox1"></div>
+                          </div>
+                          <div class="chat-message-right mb-4" id="rightmsg">
+                            <div>
+                              <img src="media/chatuser.png" class="rounded-circle mr-1" alt="Mira" width="40"
+                                height="40">
+                            </div>
+                            <div class="ctbox2"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="flex-grow-0 py-3 px-4">
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Write a message" id="ctinput">
+                          <div id="inpIcons">
+                            <button><i class="fa-sharp fa-solid fa-paperclip"></i></button>
+                            <button><i class="fa-sharp fa-solid fa-camera"></i></button>
+                          </div>
+                          <div id="micIcon">
+                            <button><i class="fa-sharp fa-solid fa-microphone"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+        <!--End of Chat Box-->
+      </div>
+  </section>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/3c811181c7.js" crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js'></script>
+
+</html>

@@ -69,9 +69,10 @@
               </a>
 
               <li>
-                <a href="#"><i class="fa-solid fa-envelope"></i>
-                  inbox
-                  <span class="badge bg-primary rounded-pill">4</span>
+                <a href="#">
+                  <i class="fa-solid fa-envelope"></i>
+                  Inbox
+                  <span class="badge bg-danger squared-pill">4</span>
                 </a>
               </li>
 
@@ -97,14 +98,14 @@
               </li>
 
               <li>
-                <a href="#" class="active">
+                <a href="#">
                   <i class="fa-regular fa-calendar"></i>
                   Calendar
                 </a>
               </li>
 
               <li>
-                <a href="#">
+                <a href="#" class="active">
                   <i class="fa-solid fa-regular fa-gear"></i>
                   Settings</a>
               </li>
@@ -118,78 +119,78 @@
           </div>
         </div>
 
-
-        <!--Mid Calendar-->
-        <div class="col-md-6" id="row2mid">
-          <h2>Calendar and Events</h2>
-          <div id="calendar">
-            <button id="btn"><i class="fa fa-plus"></i>Add</button>
-          </div>
-        </div>
-        <!--End of Mid Calendar-->
-
-        <!--row end-->
-        <div class="col-md-4" id="row2end">
-          <!--right calendar-->
-          <div class="wrapper">
-            <header>
-              <p class="current-date"></p>
-              <div class="icons">
-                <span id="prev" class="material-symbols-rounded"><i class="fa-solid fa-chevron-left"></i></span>
-                <span id="next" class="material-symbols-rounded"><i class="fa-solid fa-chevron-right"></i></span>
-              </div>
-            </header>
-            <div class="calendar">
-              <ul class="weeks">
-                <li>Sun</li>
-                <li>Mon</li>
-                <li>Tue</li>
-                <li>Wed</li>
-                <li>Thu</li>
-                <li>Fri</li>
-                <li>Sat</li>
-              </ul>
-              <ul class="days"></ul>
+        <!---Chat Box-->
+        <div class="col-md-10" id="settings">
+          <h2>My Settings</h2>
+          <div class="row">
+            <div class="col-md-6" id="leftcol">
+              <h3>Edit My Profile</h3>
+              <form>
+                <div class="form-group">
+                  <label for="name">Full name</label>
+                  <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Temi Anu">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                    placeholder="temianu@prime.com">
+                </div>
+                <div class="form-group">
+                  <label for="name">Job Role</label>
+                  <input type="text" class="form-control" id="name" aria-describedby="nameHelp"
+                    placeholder="Mathematics Teacher">
+                </div>
+                <div class="form-group">
+                  <label for="name">Address</label>
+                  <input type="text" class="form-control" id="name" aria-describedby="nameHelp"
+                    placeholder="3.Jones Street Lagos">
+                </div>
+                <div class="form-group">
+                  <label for="name">Contact Number</label>
+                  <input type="number" class="form-control" id="name" aria-describedby="nameHelp"
+                    placeholder="+2347011223344">
+                </div>
+              </form>
             </div>
-            <!--End of right calendar-->
-            <div class="eventcon">
-              <ul class="table">
-                <h2 id="thead">Classes and Events</h2>
-                <p id="thead2">see all</p>
-                <li>
-                  <h1 scope="row" id="Edate1">Fri<br><br>11</h1>
-                  <p id="Ename1">Cultural Day</p>
-                  <span id="Einfo1">
-                    <p id="Estat1">Tickets sold</p>
-                    <p id="Etime1">8:00 - 11:00</p>
-                  </span>
-                </li>
-                <hr id="bord1">
-                <li>
-                  <h1 scope="row" id="Edate2">Fri<br><br>11</h1>
-                  <p id="Ename2">Cultural Day</p>
-                  <span id="Einfo2">
-                    <p id="Estat2">Tickets sold</p>
-                    <p id="Etime2">8:00 - 11:00</p>
-                  </span>
-                </li>
-                <hr id="bord2">
-                <li>
-                  <h1 scope="row" id="Edate3">Fri<br><br>11</h1>
-                  <p id="Ename3">Cultural Day</p>
-                  <span id="Einfo3">
-                    <p id="Estat3">Tickets sold</p>
-                    <p id="Etime3">8:00 - 11:00</p>
-                  </span>
-                </li>
-                <hr id="bord3">
-              </ul>
+            <div class="col-md-5" id="rightcol">
+              <h3>Change Password</h3>
+              <form>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="inputf" aria-describedby="nameHelp"
+                    placeholder="Current password">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="inputf" aria-describedby="nameHelp"
+                    placeholder="New password">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="inputf" aria-describedby="nameHelp"
+                    placeholder="Verify new password">
+                </div>
+                <div>
+                  <h3 id="notfh">Notifications</h3>
+                  <div class="form-check" id="check1">
+                    <input type="checkbox" id="check" class="form-check-input">
+                    <label class="form-check-label" for="check" id="checkleb1">Show notifications when i receive a new
+                      message</label>
+                  </div>
+                  <div class="form-check" id="check2">
+                    <input type="checkbox" id="check" class="form-check-input">
+                    <label class="form-check-label" for="check" id="checkleb2">Show notifications when i have a class to
+                      lecture</label>
+                  </div>
+                </div>
+                <div id="buttons">
+                  <button type="submit" class="btn btn-white" id="btncel">Cancel</button>
+                  <button type="submit" class="btn btn-primary" id="btnsave">Save</button>
+                </div>
+              </form>
             </div>
           </div>
+
         </div>
-        <!--End of row end-->
+        <!--End of Chat Box-->
       </div>
-    </div>
   </section>
 
 
