@@ -1,0 +1,105 @@
+
+#classes {
+  z-index: 5;
+  height: 37.5em;
+  background: #F5F6F7;
+
+  #leftcol {
+    z-index: 3;
+    height: 32em;
+    position: relative;
+    top: 0em;
+    background: $color2;
+    padding: 3.5em;
+    padding-top: 2em;
+    padding-left: 5em;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+
+    #head {
+      position: relative;
+      top: 0.1em;
+      left: 0.8em;
+      font-size: 4em;
+      margin-bottom: 0.85em;
+    }
+
+    form {
+      #inputs {
+        height: 2em;
+        width: 33em;
+        padding-left: 2.5em;
+
+      }
+
+      #btns {
+        background: none;
+        border: none;
+      }
+
+      #iconbtn {
+        position: relative;
+        top: -1.7em;
+        left: 0.1em;
+      }
+
+      #filt1 {
+        width: 13.5em;
+        height: 2.3em;
+        position: relative;
+        top: 1.85em;
+        left: -32.92em;
+      }
+
+      #filt2 {
+        width: 13.5em;
+        height: 2.3em;
+        position: relative;
+        top: 1.85em;
+        left: -26.92em;
+      }
+
+      #btnsave {
+        position: relative;
+        top: 7.5em;
+        left: -60em;
+        width: 33em;
+        height: 3.75em;
+        padding: 1em;
+      }
+    }
+  }
+
+  #rightcol {
+    position: relative;
+    top: 6.25em;
+    left: 1.1em;
+    background: none;
+    padding: 4em;
+    padding-top: 1em;
+
+    li {
+      z-index: 1;
+      list-style: none;
+      width: 25em;
+      height: 0.75em;
+      padding: 1em;
+      padding-bottom: 2.95em;
+      background: $color2;
+      margin-bottom: 1.2em;
+      letter-spacing: 1.1px;
+      box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      img {
+        position: relative;
+        top: -1em;
+        left: -1em;
+        height: 3.9em;
+      }
+    }
+  }
+}
